@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+
+<title>Place Edges In Middle</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="Rubik's cube.css">
+<link rel="icon" href="cube.png">
+<script src="https://kit.fontawesome.com/7f10cd110f.js" crossorigin="anonymous"></script>
+<script src='control.js'></script>
+
+<style>
+
+h1 {
+margin-left:20%;
+text-align:center;
+}
+
+
+h2 {
+margin-left:20%;
+padding:20px;
+text-align:center;
+}
+
+h3 {
+margin-left:20%;
+padding:5px;
+text-align:center;
+}
+
+.button1{
+position: absolute;
+left:350px;
+}
+
+.button2{
+position: absolute;
+right:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img class="logo" src="logo.png">
+<nav>
+<ul>
+<li><a href="Home.html">HOME</a></li>
+<li><a href="Cube history.html">ABOUT</a>
+<ul>
+<li><a href="Cube history.html">The History of Cube</a></li>
+<li><a href="Cube structure.html">Information about Cube</a></li>
+<li><a href="Types of Cube.html">Types of Cube</a></li>
+</ul>
+<li><a href="Get To Know.html">SOLUTION GUIDE</a>
+<ul>
+</li>
+<li><a href="Get To Know.html">Get To Know</a></li>
+<li><a href="Create Daisy.html">Create Daisy</a></li>
+<li><a href="Make a White Cross.html">Make a WHITE Cross</a></li>
+<li><a href="Solve White Corners.html">Solve WHITE Corners</a></li>
+<li><a href="Place Edges in Middle.html">Place Edges in Middle</a></li>
+<li><a href="Make Yellow Cross.html">Make YELLOW Cross</a></li>
+<li><a href="Orient Corners.html">Orient Corners</a></li>
+<li><a href="Place Yellow Corners.html">Place YELLOW Corners</a></li>
+<li><a href="Position Yellow Edges.html">Position YELLOW Edges</a></li>
+</ul>
+</li>
+<li><a href="index.html">SPEEDCUBING</a></li>
+<li><a href="Quick Solving.html">QUICK SOLVING</a></li>
+<li><input class="user" id="name" type="button" value="SIGN IN" onclick="user()" style="font-size : 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"></li>
+</ul>
+</nav>
+
+
+<div class="submenu">
+<a href="Get To Know.html">Get To Know Your Rubik's Cube</a>
+<a href="Create Daisy.html">Step 1 - Create Daisy</a>
+<a href="Make a White Cross.html">Step 2 - Make a WHITE Cross</a>
+<a href="Solve White Corners.html">Step 3 - Solve WHITE Corners</a>
+<a href="Place Edges in Middle.html">Step 4 - Place Edges in MIDDLE</a>
+<a href="Make Yellow Cross.html">Step 5 - Make YELLOW Cross</a>
+<a href="Orient Corners.html">Step 6 - Orient Corners</a>
+<a href="Place Yellow Corners.html">Step 7 - Place YELLOW Corners</a>
+<a href="Position Yellow Edges.html">Step 8 - Position YELLOW Edges</a>
+</div>
+
+<br><br><br><br>
+
+<div>
+<h1>STEP 4 - Place Edges in Middle</h1>
+
+<h2>Holding Your Rubik’s Cube</h2>
+<h3>If your cube can match the cube or corresponding colors below, </h3>
+<h3>move to "Action 1: Moving the Edge Piece to the Left" section.</h3>
+
+<!--cube 37-->
+
+<div class="rubik37">
+<div id="container37">
+<div id="cube37">
+
+<figure id="front">
+<div class="face">
+<div class="square front37-1"></div>
+<div class="square front37-2"></div>
+<div class="square front37-3"></div>
+<div class="square front37-4"></div>
+<div class="square front37-5"></div>
+<div class="square front37-6"></div>
+<div class="square front37-7"></div>
+<div class="square front37-8"></div>
+<div class="square front37-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back37-1"></div>
+<div class="square back37-2"></div>
+<div class="square back37-3"></div>
+<div class="square back37-4"></div>
+<div class="square back37-5"></div>
+<div class="square back37-6"></div>
+<div class="square back37-7"></div>
+<div class="square back37-8"></div>
+<div class="square back37-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left37-1"></div>
+<div class="square left37-2"></div>
+<div class="square left37-3"></div>
+<div class="square left37-4"></div>
+<div class="square left37-5"></div>
+<div class="square left37-6"></div>
+<div class="square left37-7"></div>
+<div class="square left37-8"></div>
+<div class="square left37-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right37-1"></div>
+<div class="square right37-2"></div>
+<div class="square right37-3"></div>
+<div class="square right37-4"></div>
+<div class="square right37-5"></div>
+<div class="square right37-6"></div>
+<div class="square right37-7"></div>
+<div class="square right37-8"></div>
+<div class="square right37-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top37-1"></div>
+<div class="square top37-2"></div>
+<div class="square top37-3"></div>
+<div class="square top37-4"></div>
+<div class="square top37-5"></div>
+<div class="square top37-6"></div>
+<div class="square top37-7"></div>
+<div class="square top37-8"></div>
+<div class="square top37-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom37-1"></div>
+<div class="square bottom37-2"></div>
+<div class="square bottom37-3"></div>
+<div class="square bottom37-4"></div>
+<div class="square bottom37-5"></div>
+<div class="square bottom37-6"></div>
+<div class="square bottom37-7"></div>
+<div class="square bottom37-8"></div>
+<div class="square bottom37-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<h3>The GREEN pieces in the FRONT face can be replaced to RED, ORANGE or BLUE colors.</h3>
+<h3>The RED pieces in the TOP and LEFT faces can be replaced to BLUE, GREEN or ORANGE colors accordingly.</h3>
+
+<br><br><br><br>
+<br><br><br><br>
+
+<h3>If your cube can match the cube or corresponding colors below, </h3>
+<h3>move to "Action 1: Moving the Edge Piece to the Right" section.</h3>
+
+<!--cube 38-->
+
+<div class="rubik38">
+<div id="container38">
+<div id="cube38">
+
+<figure id="front">
+<div class="face">
+<div class="square front38-1"></div>
+<div class="square front38-2"></div>
+<div class="square front38-3"></div>
+<div class="square front38-4"></div>
+<div class="square front38-5"></div>
+<div class="square front38-6"></div>
+<div class="square front38-7"></div>
+<div class="square front38-8"></div>
+<div class="square front38-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back38-1"></div>
+<div class="square back38-2"></div>
+<div class="square back38-3"></div>
+<div class="square back38-4"></div>
+<div class="square back38-5"></div>
+<div class="square back38-6"></div>
+<div class="square back38-7"></div>
+<div class="square back38-8"></div>
+<div class="square back38-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left38-1"></div>
+<div class="square left38-2"></div>
+<div class="square left38-3"></div>
+<div class="square left38-4"></div>
+<div class="square left38-5"></div>
+<div class="square left38-6"></div>
+<div class="square left38-7"></div>
+<div class="square left38-8"></div>
+<div class="square left38-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right38-1"></div>
+<div class="square right38-2"></div>
+<div class="square right38-3"></div>
+<div class="square right38-4"></div>
+<div class="square right38-5"></div>
+<div class="square right38-6"></div>
+<div class="square right38-7"></div>
+<div class="square right38-8"></div>
+<div class="square right38-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top38-1"></div>
+<div class="square top38-2"></div>
+<div class="square top38-3"></div>
+<div class="square top38-4"></div>
+<div class="square top38-5"></div>
+<div class="square top38-6"></div>
+<div class="square top38-7"></div>
+<div class="square top38-8"></div>
+<div class="square top38-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom38-1"></div>
+<div class="square bottom38-2"></div>
+<div class="square bottom38-3"></div>
+<div class="square bottom38-4"></div>
+<div class="square bottom38-5"></div>
+<div class="square bottom38-6"></div>
+<div class="square bottom38-7"></div>
+<div class="square bottom38-8"></div>
+<div class="square bottom38-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br>
+
+<h3>The GREEN pieces in the FRONT face can be replaced to RED, ORANGE or BLUE colors.</h3>
+<h3>The RED pieces in the TOP and LEFT faces can be replaced to GREEN, BLUE or RED colors accordingly.</h3>
+
+<br><br><br><br>
+
+
+<h2>Action 1: Moving the Edge Piece to the Left</h2>
+<h3>Follow the first algorithm:</h3>
+<h2>U' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> L' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> L</h2>
+
+<!--cube 39-->
+
+<div class="rubik39">
+<div id="container39">
+<div id="cube39">
+
+<figure id="front">
+<div class="face">
+<div class="square front39-1"></div>
+<div class="square front39-2"></div>
+<div class="square front39-3"></div>
+<div class="square front39-4"></div>
+<div class="square front39-5"></div>
+<div class="square front39-6"></div>
+<div class="square front39-7"></div>
+<div class="square front39-8"></div>
+<div class="square front39-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back39-1"></div>
+<div class="square back39-2"></div>
+<div class="square back39-3"></div>
+<div class="square back39-4"></div>
+<div class="square back39-5"></div>
+<div class="square back39-6"></div>
+<div class="square back39-7"></div>
+<div class="square back39-8"></div>
+<div class="square back39-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left39-1"></div>
+<div class="square left39-2"></div>
+<div class="square left39-3"></div>
+<div class="square left39-4"></div>
+<div class="square left39-5"></div>
+<div class="square left39-6"></div>
+<div class="square left39-7"></div>
+<div class="square left39-8"></div>
+<div class="square left39-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right39-1"></div>
+<div class="square right39-2"></div>
+<div class="square right39-3"></div>
+<div class="square right39-4"></div>
+<div class="square right39-5"></div>
+<div class="square right39-6"></div>
+<div class="square right39-7"></div>
+<div class="square right39-8"></div>
+<div class="square right39-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top39-1"></div>
+<div class="square top39-2"></div>
+<div class="square top39-3"></div>
+<div class="square top39-4"></div>
+<div class="square top39-5"></div>
+<div class="square top39-6"></div>
+<div class="square top39-7"></div>
+<div class="square top39-8"></div>
+<div class="square top39-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom39-1"></div>
+<div class="square bottom39-2"></div>
+<div class="square bottom39-3"></div>
+<div class="square bottom39-4"></div>
+<div class="square bottom39-5"></div>
+<div class="square bottom39-6"></div>
+<div class="square bottom39-7"></div>
+<div class="square bottom39-8"></div>
+<div class="square bottom39-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<h3>This algorithm places the edge piece next to its correct corner piece.</h3>
+
+<br><br>
+
+<h3>Follow the second algorithm:</h3>
+<h2>U <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> F <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> F'</h2>
+
+<!--cube 40-->
+
+<div class="rubik40">
+<div id="container40">
+<div id="cube40">
+
+<figure id="front">
+<div class="face">
+<div class="square front40-1"></div>
+<div class="square front40-2"></div>
+<div class="square front40-3"></div>
+<div class="square front40-4"></div>
+<div class="square front40-5"></div>
+<div class="square front40-6"></div>
+<div class="square front40-7"></div>
+<div class="square front40-8"></div>
+<div class="square front40-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back40-1"></div>
+<div class="square back40-2"></div>
+<div class="square back40-3"></div>
+<div class="square back40-4"></div>
+<div class="square back40-5"></div>
+<div class="square back40-6"></div>
+<div class="square back40-7"></div>
+<div class="square back40-8"></div>
+<div class="square back40-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left40-1"></div>
+<div class="square left40-2"></div>
+<div class="square left40-3"></div>
+<div class="square left40-4"></div>
+<div class="square left40-5"></div>
+<div class="square left40-6"></div>
+<div class="square left40-7"></div>
+<div class="square left40-8"></div>
+<div class="square left40-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right40-1"></div>
+<div class="square right40-2"></div>
+<div class="square right40-3"></div>
+<div class="square right40-4"></div>
+<div class="square right40-5"></div>
+<div class="square right40-6"></div>
+<div class="square right40-7"></div>
+<div class="square right40-8"></div>
+<div class="square right40-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top40-1"></div>
+<div class="square top40-2"></div>
+<div class="square top40-3"></div>
+<div class="square top40-4"></div>
+<div class="square top40-5"></div>
+<div class="square top40-6"></div>
+<div class="square top40-7"></div>
+<div class="square top40-8"></div>
+<div class="square top40-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom40-1"></div>
+<div class="square bottom40-2"></div>
+<div class="square bottom40-3"></div>
+<div class="square bottom40-4"></div>
+<div class="square bottom40-5"></div>
+<div class="square bottom40-6"></div>
+<div class="square bottom40-7"></div>
+<div class="square bottom40-8"></div>
+<div class="square bottom40-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<h3>This algorithm brings the edge piece to the correct position in the middle layer.</h3>
+
+<br><br>
+
+<h2>OR</h2>
+
+<br><br>
+
+<h2>Action 1: Moving the Edge Piece to the Right</h2>
+<h3>Follow the first algorithm:</h3>
+<h2>U <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> R <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> R'</h2>
+
+<!--cube 41-->
+
+<div class="rubik41">
+<div id="container41">
+<div id="cube41">
+
+<figure id="front">
+<div class="face">
+<div class="square front41-1"></div>
+<div class="square front41-2"></div>
+<div class="square front41-3"></div>
+<div class="square front41-4"></div>
+<div class="square front41-5"></div>
+<div class="square front41-6"></div>
+<div class="square front41-7"></div>
+<div class="square front41-8"></div>
+<div class="square front41-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back41-1"></div>
+<div class="square back41-2"></div>
+<div class="square back41-3"></div>
+<div class="square back41-4"></div>
+<div class="square back41-5"></div>
+<div class="square back41-6"></div>
+<div class="square back41-7"></div>
+<div class="square back41-8"></div>
+<div class="square back41-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left41-1"></div>
+<div class="square left41-2"></div>
+<div class="square left41-3"></div>
+<div class="square left41-4"></div>
+<div class="square left41-5"></div>
+<div class="square left41-6"></div>
+<div class="square left41-7"></div>
+<div class="square left41-8"></div>
+<div class="square left41-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right41-1"></div>
+<div class="square right41-2"></div>
+<div class="square right41-3"></div>
+<div class="square right41-4"></div>
+<div class="square right41-5"></div>
+<div class="square right41-6"></div>
+<div class="square right41-7"></div>
+<div class="square right41-8"></div>
+<div class="square right41-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top41-1"></div>
+<div class="square top41-2"></div>
+<div class="square top41-3"></div>
+<div class="square top41-4"></div>
+<div class="square top41-5"></div>
+<div class="square top41-6"></div>
+<div class="square top41-7"></div>
+<div class="square top41-8"></div>
+<div class="square top41-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom41-1"></div>
+<div class="square bottom41-2"></div>
+<div class="square bottom41-3"></div>
+<div class="square bottom41-4"></div>
+<div class="square bottom41-5"></div>
+<div class="square bottom41-6"></div>
+<div class="square bottom41-7"></div>
+<div class="square bottom41-8"></div>
+<div class="square bottom41-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<br><br><br><br>
+<br><br>
+
+<h3>This algorithm places the edge piece next to its correct corner piece.</h3>
+
+<br><br>
+
+<h3>Follow the second algorithm:</h3>
+<h2>U' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> F' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> F</h2>
+
+<!--cube 42-->
+
+<div class="rubik42">
+<div id="container42">
+<div id="cube42">
+
+<figure id="front">
+<div class="face">
+<div class="square front42-1"></div>
+<div class="square front42-2"></div>
+<div class="square front42-3"></div>
+<div class="square front42-4"></div>
+<div class="square front42-5"></div>
+<div class="square front42-6"></div>
+<div class="square front42-7"></div>
+<div class="square front42-8"></div>
+<div class="square front42-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back42-1"></div>
+<div class="square back42-2"></div>
+<div class="square back42-3"></div>
+<div class="square back42-4"></div>
+<div class="square back42-5"></div>
+<div class="square back42-6"></div>
+<div class="square back42-7"></div>
+<div class="square back42-8"></div>
+<div class="square back42-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left42-1"></div>
+<div class="square left42-2"></div>
+<div class="square left42-3"></div>
+<div class="square left42-4"></div>
+<div class="square left42-5"></div>
+<div class="square left42-6"></div>
+<div class="square left42-7"></div>
+<div class="square left42-8"></div>
+<div class="square left42-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right42-1"></div>
+<div class="square right42-2"></div>
+<div class="square right42-3"></div>
+<div class="square right42-4"></div>
+<div class="square right42-5"></div>
+<div class="square right42-6"></div>
+<div class="square right42-7"></div>
+<div class="square right42-8"></div>
+<div class="square right42-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top42-1"></div>
+<div class="square top42-2"></div>
+<div class="square top42-3"></div>
+<div class="square top42-4"></div>
+<div class="square top42-5"></div>
+<div class="square top42-6"></div>
+<div class="square top42-7"></div>
+<div class="square top42-8"></div>
+<div class="square top42-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom42-1"></div>
+<div class="square bottom42-2"></div>
+<div class="square bottom42-3"></div>
+<div class="square bottom42-4"></div>
+<div class="square bottom42-5"></div>
+<div class="square bottom42-6"></div>
+<div class="square bottom42-7"></div>
+<div class="square bottom42-8"></div>
+<div class="square bottom42-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<br><br><br><br>
+<br><br>
+
+<h3>This algorithm brings the edge piece to the correct position in the middle layer.</h3>
+
+<br><br>
+
+<h2>Action 2</h2>
+<h3>Repeat previous Action 1 until all MIDDLE layer pieces are in the correct positions.</h3>
+
+<br><br><br><br>
+
+<h2>Step finished!</h2>
+<h3>Hover your mouse over the cube below to see another side of the cube.</h3>
+<h3>When the two bottom layers of your Rubik’s Cube look like below,</h3>
+<h3>you can move to solving the third layer. You are two-thirds of the way done!</h3>
+
+<!--cube 43-->
+
+<div class="rubik43">
+<div id="container43">
+<div id="cube43">
+
+<figure id="front">
+<div class="face">
+<div class="square front43-1"></div>
+<div class="square front43-2"></div>
+<div class="square front43-3"></div>
+<div class="square front43-4"></div>
+<div class="square front43-5"></div>
+<div class="square front43-6"></div>
+<div class="square front43-7"></div>
+<div class="square front43-8"></div>
+<div class="square front43-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back43-1"></div>
+<div class="square back43-2"></div>
+<div class="square back43-3"></div>
+<div class="square back43-4"></div>
+<div class="square back43-5"></div>
+<div class="square back43-6"></div>
+<div class="square back43-7"></div>
+<div class="square back43-8"></div>
+<div class="square back43-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left43-1"></div>
+<div class="square left43-2"></div>
+<div class="square left43-3"></div>
+<div class="square left43-4"></div>
+<div class="square left43-5"></div>
+<div class="square left43-6"></div>
+<div class="square left43-7"></div>
+<div class="square left43-8"></div>
+<div class="square left43-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right43-1"></div>
+<div class="square right43-2"></div>
+<div class="square right43-3"></div>
+<div class="square right43-4"></div>
+<div class="square right43-5"></div>
+<div class="square right43-6"></div>
+<div class="square right43-7"></div>
+<div class="square right43-8"></div>
+<div class="square right43-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top43-1"></div>
+<div class="square top43-2"></div>
+<div class="square top43-3"></div>
+<div class="square top43-4"></div>
+<div class="square top43-5"></div>
+<div class="square top43-6"></div>
+<div class="square top43-7"></div>
+<div class="square top43-8"></div>
+<div class="square top43-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom43-1"></div>
+<div class="square bottom43-2"></div>
+<div class="square bottom43-3"></div>
+<div class="square bottom43-4"></div>
+<div class="square bottom43-5"></div>
+<div class="square bottom43-6"></div>
+<div class="square bottom43-7"></div>
+<div class="square bottom43-8"></div>
+<div class="square bottom43-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/hZ70g8HvIOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+<div class="button1"><a href="Solve White Corners.html" class="click">< Previous</a></div>
+<div class="button2"><a href="Make Yellow Cross.html" class="click">Next ></a></div>
+</div>
+</body>
+
+</html>

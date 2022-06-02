@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+<title>Home</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="Rubik's cube.css">
+<link rel="stylesheet" type="text/css" href="cube animation.css">
+<link rel="icon" href="cube.png">
+<script src="https://kit.fontawesome.com/7f10cd110f.js" crossorigin="anonymous"></script>
+<script src='control.js'></script>
+
+<style>
+
+.container1{
+position: absolute;
+left: 0%;
+top: 60%;
+}
+
+.box1 {
+width:20vw;
+height:30vh;
+margin: 20px;
+padding: 20px;
+border-radius: 4px;
+text-align: center;
+border: 2px solid #cecece;
+}
+
+.container2 {
+position: absolute;
+left: 24.7%;
+top: 60%;
+}
+
+.box2 {
+width:20vw;
+height:30vh;
+margin: 20px;
+padding: 20px;
+border-radius: 4px;
+text-align: center;
+border: 2px solid #cecece;
+}
+
+.container3 {
+position: absolute;
+right: 24.7%;
+top: 60%;
+}
+
+.box3 {
+width:20vw;
+height:30vh;
+margin: 20px;
+padding: 20px;
+border-radius: 4px;
+text-align: center;
+border: 2px solid #cecece;
+}
+
+.container4 {
+position: absolute;
+right: 0%;
+top: 60%;
+}
+
+.box4 {
+width:20vw;
+height:30vh;
+margin: 20px;
+padding: 20px;
+border-radius: 4px;
+text-align: center;
+border: 2px solid #cecece;
+}
+
+h3 {
+font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+font-family: 'Montserrat', sans-serif;
+color: grey;
+line-height: 26px;
+}
+
+.read {
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.box1:hover {
+border: 2px solid #42b7ca;
+}
+
+.box2:hover {
+border: 2px solid #425fca;
+}
+
+.box3:hover {
+border: 2px solid #9c42ca;
+}
+
+.box4:hover {
+border: 2px solid #ca4281;
+}
+
+.image1 {
+position: absolute;
+left: 1.5%;
+width: 40.7vw;
+height: 46vh;
+filter: brightness(75%);
+}
+
+.image2 {
+position: absolute;
+right: 1.5%;
+width: 56.3vw;
+height: 46vh;
+filter: brightness(65%);
+}
+
+.text {
+font-family: Comic Sans MS, 'Montserrat', sans-serif;
+font-size: 40px;
+font-weight: bold;
+position: absolute;
+top: 32%;
+left: 31%;
+color: white;
+}
+
+.user1 {
+background: #333;
+font-family: Arial, Helvetica, sans-serif;
+border: none;
+color: white;
+width: 15.9vw;
+height: 60px;
+line-height: 60px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+cursor: pointer;
+}
+
+</style>
+
+</head>
+
+<body style="overflow: hidden;">
+
+<img class="logo" src="logo.png">
+<nav>
+<ul>
+<li><a href="Home.html">HOME</a></li>
+<li><a href="Cube history.html">ABOUT</a>
+<ul>
+<li><a href="Cube history.html">The History of Cube</a></li>
+<li><a href="Cube structure.html">Information about Cube</a></li>
+<li><a href="Types of Cube.html">Types of Cube</a></li>
+</ul>
+<li><a href="Get To Know.html">SOLUTION GUIDE</a>
+<ul>
+</li>
+<li><a href="Get To Know.html">Get To Know</a></li>
+<li><a href="Create Daisy.html">Create Daisy</a></li>
+<li><a href="Make a White Cross.html">Make a WHITE Cross</a></li>
+<li><a href="Solve White Corners.html">Solve WHITE Corners</a></li>
+<li><a href="Place Edges in Middle.html">Place Edges in MIDDLE</a></li>
+<li><a href="Make Yellow Cross.html">Make YELLOW Cross</a></li>
+<li><a href="Orient Corners.html">Orient Corners</a></li>
+<li><a href="Place Yellow Corners.html">Place YELLOW Corners</a></li>
+<li><a href="Position Yellow Edges.html">Position YELLOW Edges</a></li>
+</ul>
+</li>
+<li><a href="index.html">SPEEDCUBING</a></li>
+<li><a href="Quick Solving.html">QUICK SOLVING</a></li>
+<li><input class="user1" id="name" type="button" value="SIGN IN" onclick="user()" style="font-size : 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"></li>
+</ul>
+</nav>
+
+<br><br><br><br>
+
+<img src="https://cdni0.trtworld.com/w960/q75/2058-trtworld-gallery-146053-178167.jpg" class="image1">
+<img src="https://media.wired.com/photos/5ce709950bdd962e756173a9/2:1/w_1919,h_959,c_limit/Rubiks-v8.00_00_07_20.Still001-FeatureArt.jpg" class="image2">
+<div class="text">Find the Fun of Rubik's Cube!</div>
+
+<div class="container1">
+<div class="box1">
+<i class="far fa-bookmark" style="font-size:24px; color:#42b7ca;"></i>
+<h3 style="color:#42b7ca;">About</h3>
+<h4>Do You know the history of Rubik's Cube? Have you ever heard of MegaMinx Speed Cube? Here, you can get the information about Rubik's Cube.</h4>
+<a href="Cube history.html" class="read" style="color:#42b7ca;">READ MORE <span class="fas fa-angle-right" style="font-size:16px;"></a>
+</div>
+</div>
+
+<div class="container2">
+<div class="box2">
+<i class="fas fa-chalkboard-teacher" style="font-size:24px; color: #425fca;"></i>
+<h3 style="color: #425fca;">Solution Guide</h3>
+<h4>Want to know how to solve a Rubik's Cube? In this section, you can learn how to solve the top, middle and bottom layers using different algorithms.</h4>
+<a href="Get To Know.html" class="read" style="color:#425fca;">READ MORE <span class="fas fa-angle-right" style="font-size:16px;"></a>
+</div>
+</div>
+
+<div class="container3">
+<div class="box3">
+<i class="far fa-clock" style="font-size:24px; color: #9c42ca;"></i>
+<h3 style="color: #9c42ca;">Speedcubing</h3>
+<h4>There are different Rubik's Cube competitions around the world! Click to see the introduction and the amazing world records created in competitions.</h4>
+<a href="index.html" class="read" style="color:#9c42ca;">READ MORE <span class="fas fa-angle-right" style="font-size:16px;"></a>
+</div>
+</div>
+
+<div class="container4">
+<div class="box4">
+<i class="fas fa-camera" style="font-size:24px; color:#ca4281;"></i>
+<h3 style="color:#ca4281;">Quick Solving</h3>
+<h4>Can't solve your cube? Don't worry! Open your camera and take pictures of your Rubik's Cube. A solution will be provided to you after following the steps. Try it out!</h4>
+<a href="Quick Solving.html" class="read" style="color:#ca4281;">READ MORE <span class="fas fa-angle-right" style="font-size:16px;"></a>
+</div>
+</div>
+
+
+</body>
+
+</html>

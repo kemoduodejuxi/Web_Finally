@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+
+<title>Position Yellow Edges</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="Rubik's cube.css">
+<link rel="icon" href="cube.png">
+<script src="https://kit.fontawesome.com/7f10cd110f.js" crossorigin="anonymous"></script>
+<script src='control.js'></script>
+
+<style>
+
+h1 {
+margin-left:20%;
+text-align:center;
+}
+
+
+h2 {
+margin-left:20%;
+padding:20px;
+text-align:center;
+}
+
+h3 {
+margin-left:20%;
+padding:5px;
+text-align:center;
+}
+
+.button{
+position: absolute;
+left:350px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img class="logo" src="logo.png">
+<nav>
+<ul>
+<li><a href="Home.html">HOME</a></li>
+<li><a href="Cube history.html">ABOUT</a>
+<ul>
+<li><a href="Cube history.html">The History of Cube</a></li>
+<li><a href="Cube structure.html">Information about Cube</a></li>
+<li><a href="Types of Cube.html">Types of Cube</a></li>
+</ul>
+<li><a href="Get To Know.html">SOLUTION GUIDE</a>
+<ul>
+</li>
+<li><a href="Get To Know.html">Get To Know</a></li>
+<li><a href="Create Daisy.html">Create Daisy</a></li>
+<li><a href="Make a White Cross.html">Make a WHITE Cross</a></li>
+<li><a href="Solve White Corners.html">Solve WHITE Corners</a></li>
+<li><a href="Place Edges in Middle.html">Place Edges in Middle</a></li>
+<li><a href="Make Yellow Cross.html">Make YELLOW Cross</a></li>
+<li><a href="Orient Corners.html">Orient Corners</a></li>
+<li><a href="Place Yellow Corners.html">Place YELLOW Corners</a></li>
+<li><a href="Position Yellow Edges.html">Position YELLOW Edges</a></li>
+</ul>
+</li>
+<li><a href="index.html">SPEEDCUBING</a></li>
+<li><a href="Quick Solving.html">QUICK SOLVING</a></li>
+<li><input class="user" id="name" type="button" value="SIGN IN" onclick="user()" style="font-size : 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"></li>
+</ul>
+</nav>
+
+
+
+<div class="submenu">
+<a href="Get To Know.html">Get To Know Your Rubik's Cube</a>
+<a href="Create Daisy.html">Step 1 - Create Daisy</a>
+<a href="Make a White Cross.html">Step 2 - Make a WHITE Cross</a>
+<a href="Solve White Corners.html">Step 3 - Solve WHITE Corners</a>
+<a href="Place Edges in Middle.html">Step 4 - Place Edges in MIDDLE</a>
+<a href="Make Yellow Cross.html">Step 5 - Make YELLOW Cross</a>
+<a href="Orient Corners.html">Step 6 - Orient Corners</a>
+<a href="Place Yellow Corners.html">Step 7 - Place YELLOW Corners</a>
+<a href="Position Yellow Edges.html">Step 8 - Position YELLOW Edges</a>
+</div>
+
+<br><br><br><br>
+
+<div>
+<h1>STEP 8: Position the Yellow Edges</h1>
+
+<h2>Holding Your Rubik's Cube</h2>
+
+<h3>Hold your Rubik’s Cube so the one face that is a solid color is the BACK, and the Yellow face is the UP face.</h3>
+<h3>It doesn’t matter which face is in the back, if no face is a solid color.</h3>
+<h3>Below is an example of the cube:</h3>
+<h3>(Hover your mouse over the cube below to see the whole cube)</h3>
+
+<!--cube 65-->
+
+<div class="rubik65">
+<div id="container65">
+<div id="cube65">
+
+<figure id="front">
+<div class="face">
+<div class="square front65-1"></div>
+<div class="square front65-2"></div>
+<div class="square front65-3"></div>
+<div class="square front65-4"></div>
+<div class="square front65-5"></div>
+<div class="square front65-6"></div>
+<div class="square front65-7"></div>
+<div class="square front65-8"></div>
+<div class="square front65-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back65-1"></div>
+<div class="square back65-2"></div>
+<div class="square back65-3"></div>
+<div class="square back65-4"></div>
+<div class="square back65-5"></div>
+<div class="square back65-6"></div>
+<div class="square back65-7"></div>
+<div class="square back65-8"></div>
+<div class="square back65-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left65-1"></div>
+<div class="square left65-2"></div>
+<div class="square left65-3"></div>
+<div class="square left65-4"></div>
+<div class="square left65-5"></div>
+<div class="square left65-6"></div>
+<div class="square left65-7"></div>
+<div class="square left65-8"></div>
+<div class="square left65-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right65-1"></div>
+<div class="square right65-2"></div>
+<div class="square right65-3"></div>
+<div class="square right65-4"></div>
+<div class="square right65-5"></div>
+<div class="square right65-6"></div>
+<div class="square right65-7"></div>
+<div class="square right65-8"></div>
+<div class="square right65-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top65-1"></div>
+<div class="square top65-2"></div>
+<div class="square top65-3"></div>
+<div class="square top65-4"></div>
+<div class="square top65-5"></div>
+<div class="square top65-6"></div>
+<div class="square top65-7"></div>
+<div class="square top65-8"></div>
+<div class="square top65-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom65-1"></div>
+<div class="square bottom65-2"></div>
+<div class="square bottom65-3"></div>
+<div class="square bottom65-4"></div>
+<div class="square bottom65-5"></div>
+<div class="square bottom65-6"></div>
+<div class="square bottom65-7"></div>
+<div class="square bottom65-8"></div>
+<div class="square bottom65-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br><br>
+
+<h2>Action 1</h2>
+<h2>F2 <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> L <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> R' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> F2 <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> L' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> R <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> F2</h2>
+<h3>Follow the algorithm above up to 3 times to move the unsolved edges clockwise or to the left.</h3>
+<h3>When you repeat the algorithm, make sure a solved face is placed at the BACK face of the Rubik’s Cube.</h3>
+
+<h2>Step finished!</h2>
+<h3>Hover your mouse over the cube below to see the whole cube.</h3>
+<h3>When your Rubik’s Cube looks like below, you have completed the final step!</h3>
+
+<!--cube 66-->
+
+<div class="rubik66">
+<div id="container66">
+<div id="cube66">
+
+<figure id="front">
+<div class="face">
+<div class="square front66-1"></div>
+<div class="square front66-2"></div>
+<div class="square front66-3"></div>
+<div class="square front66-4"></div>
+<div class="square front66-5"></div>
+<div class="square front66-6"></div>
+<div class="square front66-7"></div>
+<div class="square front66-8"></div>
+<div class="square front66-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back66-1"></div>
+<div class="square back66-2"></div>
+<div class="square back66-3"></div>
+<div class="square back66-4"></div>
+<div class="square back66-5"></div>
+<div class="square back66-6"></div>
+<div class="square back66-7"></div>
+<div class="square back66-8"></div>
+<div class="square back66-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left66-1"></div>
+<div class="square left66-2"></div>
+<div class="square left66-3"></div>
+<div class="square left66-4"></div>
+<div class="square left66-5"></div>
+<div class="square left66-6"></div>
+<div class="square left66-7"></div>
+<div class="square left66-8"></div>
+<div class="square left66-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right66-1"></div>
+<div class="square right66-2"></div>
+<div class="square right66-3"></div>
+<div class="square right66-4"></div>
+<div class="square right66-5"></div>
+<div class="square right66-6"></div>
+<div class="square right66-7"></div>
+<div class="square right66-8"></div>
+<div class="square right66-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top66-1"></div>
+<div class="square top66-2"></div>
+<div class="square top66-3"></div>
+<div class="square top66-4"></div>
+<div class="square top66-5"></div>
+<div class="square top66-6"></div>
+<div class="square top66-7"></div>
+<div class="square top66-8"></div>
+<div class="square top66-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom66-1"></div>
+<div class="square bottom66-2"></div>
+<div class="square bottom66-3"></div>
+<div class="square bottom66-4"></div>
+<div class="square bottom66-5"></div>
+<div class="square bottom66-6"></div>
+<div class="square bottom66-7"></div>
+<div class="square bottom66-8"></div>
+<div class="square bottom66-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br>
+
+<h1>Congratulations!</h1>
+<h2>You have solved the Rubik’s Cube!</h2>
+
+<br>
+
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/5fq84H2UzuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+<div class="button"><a href="Place Yellow Corners.html" class="click">< Previous</a></div>
+
+</div>
+</body>
+
+</html>

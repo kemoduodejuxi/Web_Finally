@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+<title>Information about Rubik's Cube</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="cube.png">
+<script src='control.js'></script>
+
+<style>
+h1 {
+text-align:center;
+}
+
+
+h2 {
+padding:10px;
+text-align:center;
+}
+
+h3 {
+padding:10px;
+text-align:center;
+line-height: 36px;
+}
+
+.button1{
+position: absolute;
+top:340%;
+left:10%;
+}
+
+.button2{
+position: absolute;
+top:340%;
+right:10%;
+}
+
+td img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img class="logo" src="logo.png">
+<nav>
+<ul>
+<li><a href="Home.html">HOME</a></li>
+<li><a href="Cube history.html">ABOUT</a>
+<ul>
+<li><a href="Cube history.html">The History of Cube</a></li>
+<li><a href="Cube structure.html">Information about Cube</a></li>
+<li><a href="Types of Cube.html">Types of Cube</a></li>
+</ul>
+<li><a href="Get To Know.html">SOLUTION GUIDE</a>
+<ul>
+</li>
+<li><a href="Get To Know.html">Get To Know</a></li>
+<li><a href="Create Daisy.html">Create Daisy</a></li>
+<li><a href="Make a White Cross.html">Make a WHITE Cross</a></li>
+<li><a href="Solve White Corners.html">Solve WHITE Corners</a></li>
+<li><a href="Place Edges in Middle.html">Place Edges in MIDDLE</a></li>
+<li><a href="Make Yellow Cross.html">Make YELLOW Cross</a></li>
+<li><a href="Orient Corners.html">Orient Corners</a></li>
+<li><a href="Place Yellow Corners.html">Place YELLOW Corners</a></li>
+<li><a href="Position Yellow Edges.html">Position YELLOW Edges</a></li>
+</ul>
+</li>
+<li><a href="index.html">SPEEDCUBING</a></li>
+<li><a href="Quick Solving.html">QUICK SOLVING</a></li>
+<li><input class="user" id="name" type="button" value="SIGN IN" onclick="user()" style="font-size : 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"></li>
+</ul>
+</nav>
+
+<br><br><br><br>
+
+<h1>Rubik's Cube Color Matching</h1>
+<h3>There is not only one color matching for Rubik's cube. Now the official version is popular. In fact, there are other versions of color matching.<h3>
+
+<h2>Japanese Color Matching</h2>
+
+<h3>Japanese color matching is the color matching of Rubik's cube developed by Professor Rubik. It is white, red, orange, yellow, green and blue respectively. White and blue are relative, red orange is relative and yellow green is relative, and orange, blue and red are arranged counterclockwise.</h3>
+
+<h3>After Rubik's cube spread to the world, Rubik's company listened to the opinions of color researchers and changed the color matching, but Japan maintained the original color matching.</h3>
+
+<h2>Official Color Matching</h2>
+
+<h3>Rubik company listened to the opinions of color researchers and arranged the colors of the two opposite sides into the same color system, that is, white and yellow, red and orange, blue and green, and the three colors of blue, orange and yellow were arranged clockwise.</h3>
+
+<h2>V-cube Color Matching</h2>
+
+<h3>The color matching of v-cube company is similar to that of rubick company, except that white is replaced by black, that is, black and yellow, red orange, blue and green, and blue, orange and yellow are arranged clockwise.</h3>
+
+<h2>Other Colors</h2>
+
+<h3>Pink color, peach (magenta), cyan (sky blue), purple, gray to replace the original six colors.</h3>
+
+<h2>Korean Color Matching</h2>
+
+<h3>In Korean competitions, the color matching standards of black, yellow, blue, green, red and orange are generally adopted.</h3>
+
+<br><br>
+
+<h1>The structure of Rubik's Cube</h1>
+
+<h3>Different Rubik's cube has different structures. Take the most classic third-order Rubik's cube as an example. The third-order Rubik's cube is composed of 1 central axis / core ball, 6 central blocks, 12 side blocks and 8 corner blocks. When they are combined, each part will restrain each other, and any side can rotate horizontally without affecting other blocks.</h3>
+
+<h3>There is more than one structure of the third-order cube, such as the hollow cube. Some Chinese Rubik's cube players try to modify the three-level Rubik's cube structure to form a Rubik's cube suitable for racing. These modifications include the contact mode of friction surface, size, weight, material, color, corner treatment, spring elasticity and so on. These modifications are very successful and are favored by the world's top Rubik's cube players.</h3>
+
+<h3>However, outside China, these Rubik's Cube will still face the problem of patent rights of the third-order Rubik's cube structure. The following is the structure of the general magic cube.</h3>
+
+<table>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rubik_center_drawing.svg/225px-Rubik_center_drawing.svg.png" alt="" height="240" width="360" align="center"></td>
+
+<td><h3>The center block is connected with the central axis, but can rotate freely in the direction of the axis. The surface of the center block is square, and the structure is a little cuboid, but the inner side of the cuboid is not a plane, and there is a cylinder connected to the central axis in the center. From the side view, there will be an arc-shaped groove on the inner side of the center block. After combination, the grooves on the center block and the side block can form a circle. As you rotate, the side and corner blocks slide along the grooves.</h3></td>
+</tr>
+
+<tr>
+<td><h3>Side block: the surface of the side block is two squares, and the structure is similar to a cuboid protruding from one side of the cube, so that the side block can be embedded between the two center blocks. The arc on the surface of the cuboid is the same as that on the center block, and it can slide along the center block. The inner side of the cube has missing corners. After combination, the grooves on the center block and the side block can form a circle. As you rotate, the side and corner blocks slide along the grooves. In addition, the missing corner is also used to fix the corner block.</h3></td>
+<td><p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Rubik_edge_drawing.svg/1280px-Rubik_edge_drawing.svg.png" alt="" height="240" width="360" align="center"></td>
+</tr>
+
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Rubik_corner_drawing.svg/1280px-Rubik_corner_drawing.svg.png" alt="" height="240" width="360" align="center"></td>
+<td><h3>Corner block: the surface of the corner block is three squares, the structure is similar to a small cube, protruding from one side of the cube, so that the corner block can be embedded between the three side blocks. Like the edge block, the surface of the small cube has the same radian, which allows the corner block to rotate along the groove.</h3></td>
+</tr>
+
+<div class="button1"><a href="Cube history.html" class="click">< Previous</a></div>
+<div class="button2"><a href="Types of Cube.html" class="click">Next ></a></div>
+
+</body>
+</html>

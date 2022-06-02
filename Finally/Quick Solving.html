@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Quick Solving</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="cube.png">
+<script src='control.js'></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #sign{
+            text-align:center;
+        }
+
+        .box {
+            width:100vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+	.button {
+            display: flex;
+            justify-content: center;
+            align-items: center;	
+	}
+
+        .btn {
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+	    font-size:20px;
+	    font-weight: bold;
+            background: #4C8FFB;
+            line-height: 50px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 0 10px #999;
+	   cursor: pointer;
+        }
+
+	#play {
+	position: absolute;
+	left:470px;
+	}
+
+	#take {
+	position: absolute;
+	right:450px;
+	}
+
+        video, canvas {
+            width: 300px;
+            height: 300px;
+            border: 5px solid #000;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+
+	h1 {
+	text-align:center;
+	margin:24px;
+	left:50%;
+	}
+
+
+	h2 {
+	padding:20px;
+	text-align:center;
+	}
+	
+	.confirm {
+	font-size:24px;
+	line-height: 30px;
+	}
+
+	.submit {
+	font-size:18px;
+	font-weight: bold;
+	height: 40px; 
+	width: 100px;
+	}
+    input{
+        height: 10px;
+        width: 40px;
+    }
+    </style>
+</head>
+
+<body>
+
+<img class="logo" src="logo.png">
+<nav>
+<ul>
+<li><a href="Home.html">HOME</a></li>
+<li><a href="Cube history.html">ABOUT</a>
+<ul>
+<li><a href="Cube history.html">The History of Cube</a></li>
+<li><a href="Cube structure.html">Information about Cube</a></li>
+<li><a href="Types of Cube.html">Types of Cube</a></li>
+</ul>
+<li><a href="Get To Know.html">SOLUTION GUIDE</a>
+<ul>
+</li>
+<li><a href="Get To Know.html">Get To Know</a></li>
+<li><a href="Create Daisy.html">Create Daisy</a></li>
+<li><a href="Make a White Cross.html">Make a WHITE Cross</a></li>
+<li><a href="Solve White Corners.html">Solve WHITE Corners</a></li>
+<li><a href="Place Edges in Middle.html">Place Edges in MIDDLE</a></li>
+<li><a href="Make Yellow Cross.html">Make YELLOW Cross</a></li>
+<li><a href="Orient Corners.html">Orient Corners</a></li>
+<li><a href="Place Yellow Corners.html">Place YELLOW Corners</a></li>
+<li><a href="Position Yellow Edges.html">Position YELLOW Edges</a></li>
+</ul>
+</li>
+<li><a href="index.html">SPEEDCUBING</a></li>
+<li><a href="Quick Solving.html">QUICK SOLVING</a></li>
+<li><input class="user" id="name" type="button" value="SIGN IN" onclick="user()" style="font-size : 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"></li>
+</ul>
+</nav>
+
+<br><br><br><br>
+
+<h1>Quick Solving</h1>
+
+<h1 id="sign" style="color: #ca4281">Please turn the cube to the front</h1>
+
+<div class="box">
+
+    <video id="video"></video>
+    <div style="position: relative; left : -170px; top : 0px; border: 5px solid gray;width:30px;height:30px"></div>
+    <canvas id="canvas1" width="300px" height="300px"></canvas>
+    <div>
+        <p>Red H:<input id="R_H" type="text" value="125">S:<input id="R_S" type="text" value="43.6"> V:<input id="R_V" type="text" value="46"></p>
+        <p>Green H:<input id="G_H" type="text" value="44">S:<input id="G_S" type="text" value="43.6"> V:<input id="G_V" type="text" value="46"></p>
+        <p>Blue H:<input id="B_H" type="text" value="80">S:<input id="B_S" type="text" value="46"> V:<input id="B_V" type="text" value="46"></p>
+        <p>Orange H:<input id="O_H" type="text" value="3">S:<input id="O_S" type="text" value="43.6"> V:<input id="O_V" type="text" value="46"></p>
+        <p>White H:<input id="W_H" type="text" value="0">S:<input id="W_S" type="text" value="0"> V:<input id="W_V" type="text" value="46"></p>
+        <p>Yellow H:<input id="Y_H" type="text" value="28">S:<input id="Y_S" type="text" value="43.6"> V:<input id="Y_V" type="text" value="46"></p>
+    </div>
+</div>
+<br><br>
+<div class="button"><div style="left: auto" id="play" class="btn">Open Camera</div>
+</div></div>
+<br><br>
+<h2 style="visibility: hidden">Confirm Value: <input style="visibility: hidden" style="width: 200px ;height: 20px;" type="text" class="confirm" id="confirm"/>
+<input style="visibility: hidden" type="submit" value="Submit" class="submit" id = "submit"/></h2>
+
+<script src="get_Cam_data.js"></script>
+</body>
+</html>

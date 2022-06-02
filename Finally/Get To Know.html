@@ -1,0 +1,6335 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+
+<title>Get To Know Your Rubik's cube</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="Rubik's cube.css">
+<link rel="stylesheet" type="text/css" href="cube animation.css">
+<link rel="icon" href="cube.png">
+<script src="https://kit.fontawesome.com/7f10cd110f.js" crossorigin="anonymous"></script>
+<script src='control.js'></script>
+
+<style>
+
+h1 {
+margin-left:20%;
+text-align:center;
+}
+
+
+h2 {
+margin-left:20%;
+padding:20px;
+text-align:center;
+}
+
+h3 {
+margin-left:20%;
+padding:5px;
+text-align:center;
+}
+
+.btn1 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn2 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn3 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn4 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn5 {
+position: absolute;
+margin-top: 50vh;
+left: 40vw;
+}
+
+.btn6 {
+position: absolute;
+margin-top: 50vh;
+left: 40vw;
+}
+
+.btn7 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn8 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn9 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn10 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn11 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.btn12 {
+position: absolute;
+margin-top: 44vh;
+left: 40vw;
+}
+
+.button{
+position: absolute;
+right:100px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img class="logo" src="logo.png">
+<nav>
+<ul>
+<li><a href="Home.html">HOME</a></li>
+<li><a href="Cube history.html">ABOUT</a>
+<ul>
+<li><a href="Cube history.html">The History of Cube</a></li>
+<li><a href="Cube structure.html">Information about Cube</a></li>
+<li><a href="Types of Cube.html">Types of Cube</a></li>
+</ul>
+<li><a href="Get To Know.html">SOLUTION GUIDE</a>
+<ul>
+</li>
+<li><a href="Get To Know.html">Get To Know</a></li>
+<li><a href="Create Daisy.html">Create Daisy</a></li>
+<li><a href="Make a White Cross.html">Make a WHITE Cross</a></li>
+<li><a href="Solve White Corners.html">Solve WHITE Corners</a></li>
+<li><a href="Place Edges in Middle.html">Place Edges in Middle</a></li>
+<li><a href="Make Yellow Cross.html">Make YELLOW Cross</a></li>
+<li><a href="Orient Corners.html">Orient Corners</a></li>
+<li><a href="Place Yellow Corners.html">Place YELLOW Corners</a></li>
+<li><a href="Position Yellow Edges.html">Position YELLOW Edges</a></li>
+</ul>
+</li>
+<li><a href="index.html">SPEEDCUBING</a></li>
+<li><a href="Quick Solving.html">QUICK SOLVING</a></li>
+<li><input class="user" id="name" type="button" value="SIGN IN" onclick="user()" style="font-size : 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"></li>
+</ul>
+</nav>
+
+<div class="submenu">
+<a href="Get To Know.html">Get To Know Your Rubik's Cube</a>
+<a href="Create Daisy.html">Step 1 - Create Daisy</a>
+<a href="Make a White Cross.html">Step 2 - Make a WHITE Cross</a>
+<a href="Solve White Corners.html">Step 3 - Solve WHITE Corners</a>
+<a href="Place Edges in Middle.html">Step 4 - Place Edges in MIDDLE</a>
+<a href="Make Yellow Cross.html">Step 5 - Make YELLOW Cross</a>
+<a href="Orient Corners.html">Step 6 - Orient Corners</a>
+<a href="Place Yellow Corners.html">Step 7 - Place YELLOW Corners</a>
+<a href="Position Yellow Edges.html">Step 8 - Position YELLOW Edges</a>
+</div>
+
+<br><br><br><br>
+
+<div>
+<h1>Get To Know Your Rubik's cube</h1>
+
+<h2>LAYERS</h2>
+<h3>There are three horizontal layers in a 3x3 Rubik’s Cube.</h3>
+<h3>This guide will lead you to solve the Rubik’s Cube from top layer to bottom layer.</h3>
+
+<h2>Top Layer:</h2>
+
+<!--cube 1-->
+
+<div class="rubik1">
+<div id="container1">
+<div id="cube1">
+
+<figure id="front">
+<div class="face">
+<div class="square front1-1"></div>
+<div class="square front1-2"></div>
+<div class="square front1-3"></div>
+<div class="square front1-4"></div>
+<div class="square front1-5"></div>
+<div class="square front1-6"></div>
+<div class="square front1-7"></div>
+<div class="square front1-8"></div>
+<div class="square front1-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back1-1"></div>
+<div class="square back1-2"></div>
+<div class="square back1-3"></div>
+<div class="square back1-4"></div>
+<div class="square back1-5"></div>
+<div class="square back1-6"></div>
+<div class="square back1-7"></div>
+<div class="square back1-8"></div>
+<div class="square back1-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left1-1"></div>
+<div class="square left1-2"></div>
+<div class="square left1-3"></div>
+<div class="square left1-4"></div>
+<div class="square left1-5"></div>
+<div class="square left1-6"></div>
+<div class="square left1-7"></div>
+<div class="square left1-8"></div>
+<div class="square left1-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right1-1"></div>
+<div class="square right1-2"></div>
+<div class="square right1-3"></div>
+<div class="square right1-4"></div>
+<div class="square right1-5"></div>
+<div class="square right1-6"></div>
+<div class="square right1-7"></div>
+<div class="square right1-8"></div>
+<div class="square right1-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top1-1"></div>
+<div class="square top1-2"></div>
+<div class="square top1-3"></div>
+<div class="square top1-4"></div>
+<div class="square top1-5"></div>
+<div class="square top1-6"></div>
+<div class="square top1-7"></div>
+<div class="square top1-8"></div>
+<div class="square top1-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom1-1"></div>
+<div class="square bottom1-2"></div>
+<div class="square bottom1-3"></div>
+<div class="square bottom1-4"></div>
+<div class="square bottom1-5"></div>
+<div class="square bottom1-6"></div>
+<div class="square bottom1-7"></div>
+<div class="square bottom1-8"></div>
+<div class="square bottom1-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<h2>Middle Layer:</h2>
+
+<!--cube 2-->
+
+<div class="rubik2">
+<div id="container2">
+<div id="cube2">
+
+<figure id="front">
+<div class="face">
+<div class="square front2-1"></div>
+<div class="square front2-2"></div>
+<div class="square front2-3"></div>
+<div class="square front2-4"></div>
+<div class="square front2-5"></div>
+<div class="square front2-6"></div>
+<div class="square front2-7"></div>
+<div class="square front2-8"></div>
+<div class="square front2-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back2-1"></div>
+<div class="square back2-2"></div>
+<div class="square back2-3"></div>
+<div class="square back2-4"></div>
+<div class="square back2-5"></div>
+<div class="square back2-6"></div>
+<div class="square back2-7"></div>
+<div class="square back2-8"></div>
+<div class="square back2-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left2-1"></div>
+<div class="square left2-2"></div>
+<div class="square left2-3"></div>
+<div class="square left2-4"></div>
+<div class="square left2-5"></div>
+<div class="square left2-6"></div>
+<div class="square left2-7"></div>
+<div class="square left2-8"></div>
+<div class="square left2-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right2-1"></div>
+<div class="square right2-2"></div>
+<div class="square right2-3"></div>
+<div class="square right2-4"></div>
+<div class="square right2-5"></div>
+<div class="square right2-6"></div>
+<div class="square right2-7"></div>
+<div class="square right2-8"></div>
+<div class="square right2-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top2-1"></div>
+<div class="square top2-2"></div>
+<div class="square top2-3"></div>
+<div class="square top2-4"></div>
+<div class="square top2-5"></div>
+<div class="square top2-6"></div>
+<div class="square top2-7"></div>
+<div class="square top2-8"></div>
+<div class="square top2-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom2-1"></div>
+<div class="square bottom2-2"></div>
+<div class="square bottom2-3"></div>
+<div class="square bottom2-4"></div>
+<div class="square bottom2-5"></div>
+<div class="square bottom2-6"></div>
+<div class="square bottom2-7"></div>
+<div class="square bottom2-8"></div>
+<div class="square bottom2-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<h2>Bottom Layer:</h2>
+
+<!--cube 3-->
+
+<div class="rubik3">
+<div id="container3">
+<div id="cube3">
+
+<figure id="front">
+<div class="face">
+<div class="square front3-1"></div>
+<div class="square front3-2"></div>
+<div class="square front3-3"></div>
+<div class="square front3-4"></div>
+<div class="square front3-5"></div>
+<div class="square front3-6"></div>
+<div class="square front3-7"></div>
+<div class="square front3-8"></div>
+<div class="square front3-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back3-1"></div>
+<div class="square back3-2"></div>
+<div class="square back3-3"></div>
+<div class="square back3-4"></div>
+<div class="square back3-5"></div>
+<div class="square back3-6"></div>
+<div class="square back3-7"></div>
+<div class="square back3-8"></div>
+<div class="square back3-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left3-1"></div>
+<div class="square left3-2"></div>
+<div class="square left3-3"></div>
+<div class="square left3-4"></div>
+<div class="square left3-5"></div>
+<div class="square left3-6"></div>
+<div class="square left3-7"></div>
+<div class="square left3-8"></div>
+<div class="square left3-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right3-1"></div>
+<div class="square right3-2"></div>
+<div class="square right3-3"></div>
+<div class="square right3-4"></div>
+<div class="square right3-5"></div>
+<div class="square right3-6"></div>
+<div class="square right3-7"></div>
+<div class="square right3-8"></div>
+<div class="square right3-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top3-1"></div>
+<div class="square top3-2"></div>
+<div class="square top3-3"></div>
+<div class="square top3-4"></div>
+<div class="square top3-5"></div>
+<div class="square top3-6"></div>
+<div class="square top3-7"></div>
+<div class="square top3-8"></div>
+<div class="square top3-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom3-1"></div>
+<div class="square bottom3-2"></div>
+<div class="square bottom3-3"></div>
+<div class="square bottom3-4"></div>
+<div class="square bottom3-5"></div>
+<div class="square bottom3-6"></div>
+<div class="square bottom3-7"></div>
+<div class="square bottom3-8"></div>
+<div class="square bottom3-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>FACES</h2>
+<h3>There are 6 faces on a Rubik’s Cube.</h3>
+
+<!--cube 4-->
+
+<div class="rubik4">
+<div id="container4">
+<div id="cube4">
+
+<figure id="front">
+<div class="face">
+<div class="square front4-1"></div>
+<div class="square front4-2"></div>
+<div class="square front4-3"></div>
+<div class="square front4-4"></div>
+<div class="square front4-5"></div>
+<div class="square front4-6"></div>
+<div class="square front4-7"></div>
+<div class="square front4-8"></div>
+<div class="square front4-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back4-1"></div>
+<div class="square back4-2"></div>
+<div class="square back4-3"></div>
+<div class="square back4-4"></div>
+<div class="square back4-5"></div>
+<div class="square back4-6"></div>
+<div class="square back4-7"></div>
+<div class="square back4-8"></div>
+<div class="square back4-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left4-1"></div>
+<div class="square left4-2"></div>
+<div class="square left4-3"></div>
+<div class="square left4-4"></div>
+<div class="square left4-5"></div>
+<div class="square left4-6"></div>
+<div class="square left4-7"></div>
+<div class="square left4-8"></div>
+<div class="square left4-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right4-1"></div>
+<div class="square right4-2"></div>
+<div class="square right4-3"></div>
+<div class="square right4-4"></div>
+<div class="square right4-5"></div>
+<div class="square right4-6"></div>
+<div class="square right4-7"></div>
+<div class="square right4-8"></div>
+<div class="square right4-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top4-1"></div>
+<div class="square top4-2"></div>
+<div class="square top4-3"></div>
+<div class="square top4-4"></div>
+<div class="square top4-5"></div>
+<div class="square top4-6"></div>
+<div class="square top4-7"></div>
+<div class="square top4-8"></div>
+<div class="square top4-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom4-1"></div>
+<div class="square bottom4-2"></div>
+<div class="square bottom4-3"></div>
+<div class="square bottom4-4"></div>
+<div class="square bottom4-5"></div>
+<div class="square bottom4-6"></div>
+<div class="square bottom4-7"></div>
+<div class="square bottom4-8"></div>
+<div class="square bottom4-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>CENTERS</h2>
+<h3>Center pieces have one colored piece which fixed to the internal core.</h3> 
+<h3>There are 6 center pieces in a Rubik's Cube.</h3>
+<h3>When correctly solved, each face will be the color of its center piece.</h3>
+
+<!--cube 5-->
+
+<div class="rubik5">
+<div id="container5">
+<div id="cube5">
+
+<figure id="front">
+<div class="face">
+<div class="square front5-1"></div>
+<div class="square front5-2"></div>
+<div class="square front5-3"></div>
+<div class="square front5-4"></div>
+<div class="square front5-5"></div>
+<div class="square front5-6"></div>
+<div class="square front5-7"></div>
+<div class="square front5-8"></div>
+<div class="square front5-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back5-1"></div>
+<div class="square back5-2"></div>
+<div class="square back5-3"></div>
+<div class="square back5-4"></div>
+<div class="square back5-5"></div>
+<div class="square back5-6"></div>
+<div class="square back5-7"></div>
+<div class="square back5-8"></div>
+<div class="square back5-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left5-1"></div>
+<div class="square left5-2"></div>
+<div class="square left5-3"></div>
+<div class="square left5-4"></div>
+<div class="square left5-5"></div>
+<div class="square left5-6"></div>
+<div class="square left5-7"></div>
+<div class="square left5-8"></div>
+<div class="square left5-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right5-1"></div>
+<div class="square right5-2"></div>
+<div class="square right5-3"></div>
+<div class="square right5-4"></div>
+<div class="square right5-5"></div>
+<div class="square right5-6"></div>
+<div class="square right5-7"></div>
+<div class="square right5-8"></div>
+<div class="square right5-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top5-1"></div>
+<div class="square top5-2"></div>
+<div class="square top5-3"></div>
+<div class="square top5-4"></div>
+<div class="square top5-5"></div>
+<div class="square top5-6"></div>
+<div class="square top5-7"></div>
+<div class="square top5-8"></div>
+<div class="square top5-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom5-1"></div>
+<div class="square bottom5-2"></div>
+<div class="square bottom5-3"></div>
+<div class="square bottom5-4"></div>
+<div class="square bottom5-5"></div>
+<div class="square bottom5-6"></div>
+<div class="square bottom5-7"></div>
+<div class="square bottom5-8"></div>
+<div class="square bottom5-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+
+<h3>Center piece colors are always opposite each other:</h3>
+<h3>BLUE opposite GREEN</h3>
+
+<!--cube 6-->
+
+<div class="rubik6">
+<div id="container6">
+<div id="cube6">
+
+<figure id="front">
+<div class="face1">
+<div class="square3 front6-1"></div>
+<div class="square3 front6-2"></div>
+<div class="square3 front6-3"></div>
+<div class="square3 front6-4"></div>
+<div class="square3 front6-5"></div>
+<div class="square3 front6-6"></div>
+<div class="square3 front6-7"></div>
+<div class="square3 front6-8"></div>
+<div class="square3 front6-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face1">
+<div class="square3 back6-1"></div>
+<div class="square3 back6-2"></div>
+<div class="square3 back6-3"></div>
+<div class="square3 back6-4"></div>
+<div class="square3 back6-5"></div>
+<div class="square3 back6-6"></div>
+<div class="square3 back6-7"></div>
+<div class="square3 back6-8"></div>
+<div class="square3 back6-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face1">
+<div class="square3 left6-1"></div>
+<div class="square3 left6-2"></div>
+<div class="square3 left6-3"></div>
+<div class="square3 left6-4"></div>
+<div class="square3 left6-5"></div>
+<div class="square3 left6-6"></div>
+<div class="square3 left6-7"></div>
+<div class="square3 left6-8"></div>
+<div class="square3 left6-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face1">
+<div class="square3 right6-1"></div>
+<div class="square3 right6-2"></div>
+<div class="square3 right6-3"></div>
+<div class="square3 right6-4"></div>
+<div class="square3 right6-5"></div>
+<div class="square3 right6-6"></div>
+<div class="square3 right6-7"></div>
+<div class="square3 right6-8"></div>
+<div class="square3 right6-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face1">
+<div class="square3 top6-1"></div>
+<div class="square3 top6-2"></div>
+<div class="square3 top6-3"></div>
+<div class="square3 top6-4"></div>
+<div class="square3 top6-5"></div>
+<div class="square3 top6-6"></div>
+<div class="square3 top6-7"></div>
+<div class="square3 top6-8"></div>
+<div class="square3 top6-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face1">
+<div class="square3 bottom6-1"></div>
+<div class="square3 bottom6-2"></div>
+<div class="square3 bottom6-3"></div>
+<div class="square3 bottom6-4"></div>
+<div class="square3 bottom6-5"></div>
+<div class="square3 bottom6-6"></div>
+<div class="square3 bottom6-7"></div>
+<div class="square3 bottom6-8"></div>
+<div class="square3 bottom6-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>ORANGE opposite RED</h3>
+
+<!--cube 7-->
+
+<div class="rubik7">
+<div id="container7">
+<div id="cube7">
+
+<figure id="front">
+<div class="face1">
+<div class="square3 front7-1"></div>
+<div class="square3 front7-2"></div>
+<div class="square3 front7-3"></div>
+<div class="square3 front7-4"></div>
+<div class="square3 front7-5"></div>
+<div class="square3 front7-6"></div>
+<div class="square3 front7-7"></div>
+<div class="square3 front7-8"></div>
+<div class="square3 front7-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face1">
+<div class="square3 back7-1"></div>
+<div class="square3 back7-2"></div>
+<div class="square3 back7-3"></div>
+<div class="square3 back7-4"></div>
+<div class="square3 back7-5"></div>
+<div class="square3 back7-6"></div>
+<div class="square3 back7-7"></div>
+<div class="square3 back7-8"></div>
+<div class="square3 back7-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face1">
+<div class="square3 left7-1"></div>
+<div class="square3 left7-2"></div>
+<div class="square3 left7-3"></div>
+<div class="square3 left7-4"></div>
+<div class="square3 left7-5"></div>
+<div class="square3 left7-6"></div>
+<div class="square3 left7-7"></div>
+<div class="square3 left7-8"></div>
+<div class="square3 left7-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face1">
+<div class="square3 right7-1"></div>
+<div class="square3 right7-2"></div>
+<div class="square3 right7-3"></div>
+<div class="square3 right7-4"></div>
+<div class="square3 right7-5"></div>
+<div class="square3 right7-6"></div>
+<div class="square3 right7-7"></div>
+<div class="square3 right7-8"></div>
+<div class="square3 right7-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face1">
+<div class="square3 top7-1"></div>
+<div class="square3 top7-2"></div>
+<div class="square3 top7-3"></div>
+<div class="square3 top7-4"></div>
+<div class="square3 top7-5"></div>
+<div class="square3 top7-6"></div>
+<div class="square3 top7-7"></div>
+<div class="square3 top7-8"></div>
+<div class="square3 top7-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face1">
+<div class="square3 bottom7-1"></div>
+<div class="square3 bottom7-2"></div>
+<div class="square3 bottom7-3"></div>
+<div class="square3 bottom7-4"></div>
+<div class="square3 bottom7-5"></div>
+<div class="square3 bottom7-6"></div>
+<div class="square3 bottom7-7"></div>
+<div class="square3 bottom7-8"></div>
+<div class="square3 bottom7-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>WHITE opposite YELLOW</h3>
+
+<!--cube 8-->
+
+<div class="rubik8">
+<div id="container8">
+<div id="cube8">
+
+<figure id="front">
+<div class="face1">
+<div class="square3 front8-1"></div>
+<div class="square3 front8-2"></div>
+<div class="square3 front8-3"></div>
+<div class="square3 front8-4"></div>
+<div class="square3 front8-5"></div>
+<div class="square3 front8-6"></div>
+<div class="square3 front8-7"></div>
+<div class="square3 front8-8"></div>
+<div class="square3 front8-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face1">
+<div class="square3 back8-1"></div>
+<div class="square3 back8-2"></div>
+<div class="square3 back8-3"></div>
+<div class="square3 back8-4"></div>
+<div class="square3 back8-5"></div>
+<div class="square3 back8-6"></div>
+<div class="square3 back8-7"></div>
+<div class="square3 back8-8"></div>
+<div class="square3 back8-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face1">
+<div class="square3 left8-1"></div>
+<div class="square3 left8-2"></div>
+<div class="square3 left8-3"></div>
+<div class="square3 left8-4"></div>
+<div class="square3 left8-5"></div>
+<div class="square3 left8-6"></div>
+<div class="square3 left8-7"></div>
+<div class="square3 left8-8"></div>
+<div class="square3 left8-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face1">
+<div class="square3 right8-1"></div>
+<div class="square3 right8-2"></div>
+<div class="square3 right8-3"></div>
+<div class="square3 right8-4"></div>
+<div class="square3 right8-5"></div>
+<div class="square3 right8-6"></div>
+<div class="square3 right8-7"></div>
+<div class="square3 right8-8"></div>
+<div class="square3 right8-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face1">
+<div class="square3 top8-1"></div>
+<div class="square3 top8-2"></div>
+<div class="square3 top8-3"></div>
+<div class="square3 top8-4"></div>
+<div class="square3 top8-5"></div>
+<div class="square3 top8-6"></div>
+<div class="square3 top8-7"></div>
+<div class="square3 top8-8"></div>
+<div class="square3 top8-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face1">
+<div class="square3 bottom8-1"></div>
+<div class="square3 bottom8-2"></div>
+<div class="square3 bottom8-3"></div>
+<div class="square3 bottom8-4"></div>
+<div class="square3 bottom8-5"></div>
+<div class="square3 bottom8-6"></div>
+<div class="square3 bottom8-7"></div>
+<div class="square3 bottom8-8"></div>
+<div class="square3 bottom8-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>EDGES</h2>
+<h3>There are 12 edge in a Rubik's Cube.</h3>
+
+<!--cube 9-->
+
+<div class="rubik9">
+<div id="container9">
+<div id="cube9">
+
+<figure id="front">
+<div class="face1">
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face1">
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face1">
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face1">
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face1">
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face1">
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+<div class="square1"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>CORNERS</h2>
+<h3>Corner have three colored pieces. There are 8 corner pieces in a Rubik's Cube.</h3>
+
+<!--cube 10-->
+
+<div class="rubik10">
+<div id="container10">
+<div id="cube10">
+
+<figure id="front">
+<div class="face">
+<div class="square front10-1"></div>
+<div class="square front10-2"></div>
+<div class="square front10-3"></div>
+<div class="square front10-4"></div>
+<div class="square front10-5"></div>
+<div class="square front10-6"></div>
+<div class="square front10-7"></div>
+<div class="square front10-8"></div>
+<div class="square front10-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back10-1"></div>
+<div class="square back10-2"></div>
+<div class="square back10-3"></div>
+<div class="square back10-4"></div>
+<div class="square back10-5"></div>
+<div class="square back10-6"></div>
+<div class="square back10-7"></div>
+<div class="square back10-8"></div>
+<div class="square back10-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left10-1"></div>
+<div class="square left10-2"></div>
+<div class="square left10-3"></div>
+<div class="square left10-4"></div>
+<div class="square left10-5"></div>
+<div class="square left10-6"></div>
+<div class="square left10-7"></div>
+<div class="square left10-8"></div>
+<div class="square left10-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right10-1"></div>
+<div class="square right10-2"></div>
+<div class="square right10-3"></div>
+<div class="square right10-4"></div>
+<div class="square right10-5"></div>
+<div class="square right10-6"></div>
+<div class="square right10-7"></div>
+<div class="square right10-8"></div>
+<div class="square right10-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top10-1"></div>
+<div class="square top10-2"></div>
+<div class="square top10-3"></div>
+<div class="square top10-4"></div>
+<div class="square top10-5"></div>
+<div class="square top10-6"></div>
+<div class="square top10-7"></div>
+<div class="square top10-8"></div>
+<div class="square top10-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom10-1"></div>
+<div class="square bottom10-2"></div>
+<div class="square bottom10-3"></div>
+<div class="square bottom10-4"></div>
+<div class="square bottom10-5"></div>
+<div class="square bottom10-6"></div>
+<div class="square bottom10-7"></div>
+<div class="square bottom10-8"></div>
+<div class="square bottom10-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>Face Key</h2>
+<h3>Each face is represented by a letter.</h3>
+
+<h2>U = UP FACE</h2>
+
+<!--cube 11-->
+
+<div class="rubik11">
+<div id="container11">
+<div id="cube11">
+
+<figure id="front">
+<div class="face">
+<div class="square front11-1"></div>
+<div class="square front11-2"></div>
+<div class="square front11-3"></div>
+<div class="square front11-4"></div>
+<div class="square front11-5"></div>
+<div class="square front11-6"></div>
+<div class="square front11-7"></div>
+<div class="square front11-8"></div>
+<div class="square front11-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back11-1"></div>
+<div class="square back11-2"></div>
+<div class="square back11-3"></div>
+<div class="square back11-4"></div>
+<div class="square back11-5"></div>
+<div class="square back11-6"></div>
+<div class="square back11-7"></div>
+<div class="square back11-8"></div>
+<div class="square back11-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left11-1"></div>
+<div class="square left11-2"></div>
+<div class="square left11-3"></div>
+<div class="square left11-4"></div>
+<div class="square left11-5"></div>
+<div class="square left11-6"></div>
+<div class="square left11-7"></div>
+<div class="square left11-8"></div>
+<div class="square left11-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right11-1"></div>
+<div class="square right11-2"></div>
+<div class="square right11-3"></div>
+<div class="square right11-4"></div>
+<div class="square right11-5"></div>
+<div class="square right11-6"></div>
+<div class="square right11-7"></div>
+<div class="square right11-8"></div>
+<div class="square right11-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top11-1"></div>
+<div class="square top11-2"></div>
+<div class="square top11-3"></div>
+<div class="square top11-4"></div>
+<div class="square top11-5"></div>
+<div class="square top11-6"></div>
+<div class="square top11-7"></div>
+<div class="square top11-8"></div>
+<div class="square top11-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom11-1"></div>
+<div class="square bottom11-2"></div>
+<div class="square bottom11-3"></div>
+<div class="square bottom11-4"></div>
+<div class="square bottom11-5"></div>
+<div class="square bottom11-6"></div>
+<div class="square bottom11-7"></div>
+<div class="square bottom11-8"></div>
+<div class="square bottom11-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>D = DOWN FACE</h2>
+
+<!--cube 12-->
+
+<div class="rubik12">
+<div id="container12">
+<div id="cube12">
+
+<figure id="front1">
+<div class="face">
+<div class="square2 front12-1"></div>
+<div class="square2 front12-2"></div>
+<div class="square2 front12-3"></div>
+<div class="square2 front12-4"></div>
+<div class="square2 front12-5"></div>
+<div class="square2 front12-6"></div>
+<div class="square2 front12-7"></div>
+<div class="square2 front12-8"></div>
+<div class="square2 front12-9"></div>
+</div>
+</figure>
+
+<figure id="back1">
+<div class="face">
+<div class="square2 back12-1"></div>
+<div class="square2 back12-2"></div>
+<div class="square2 back12-3"></div>
+<div class="square2 back12-4"></div>
+<div class="square2 back12-5"></div>
+<div class="square2 back12-6"></div>
+<div class="square2 back12-7"></div>
+<div class="square2 back12-8"></div>
+<div class="square2 back12-9"></div>
+</div>
+</figure>
+  
+<figure id="left1">
+<div class="face">
+<div class="square2 left12-1"></div>
+<div class="square2 left12-2"></div>
+<div class="square2 left12-3"></div>
+<div class="square2 left12-4"></div>
+<div class="square2 left12-5"></div>
+<div class="square2 left12-6"></div>
+<div class="square2 left12-7"></div>
+<div class="square2 left12-8"></div>
+<div class="square2 left12-9"></div>
+</div>
+</figure>
+
+<figure id="right1">
+<div class="face">
+<div class="square2 right12-1"></div>
+<div class="square2 right12-2"></div>
+<div class="square2 right12-3"></div>
+<div class="square2 right12-4"></div>
+<div class="square2 right12-5"></div>
+<div class="square2 right12-6"></div>
+<div class="square2 right12-7"></div>
+<div class="square2 right12-8"></div>
+<div class="square2 right12-9"></div>
+</div>
+</figure>
+
+<figure id="top1">
+<div class="face">
+<div class="square2 top12-1"></div>
+<div class="square2 top12-2"></div>
+<div class="square2 top12-3"></div>
+<div class="square2 top12-4"></div>
+<div class="square2 top12-5"></div>
+<div class="square2 top12-6"></div>
+<div class="square2 top12-7"></div>
+<div class="square2 top12-8"></div>
+<div class="square2 top12-9"></div>
+</div>
+</figure>
+
+<figure id="bottom1">
+<div class="face">
+<div class="square2 bottom12-1"></div>
+<div class="square2 bottom12-2"></div>
+<div class="square2 bottom12-3"></div>
+<div class="square2 bottom12-4"></div>
+<div class="square2 bottom12-5"></div>
+<div class="square2 bottom12-6"></div>
+<div class="square2 bottom12-7"></div>
+<div class="square2 bottom12-8"></div>
+<div class="square2 bottom12-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br>
+
+<h2>L = LEFT FACE</h2>
+
+<!--cube 13-->
+
+<div class="rubik13">
+<div id="container13">
+<div id="cube13">
+
+<figure id="front">
+<div class="face">
+<div class="square front13-1"></div>
+<div class="square front13-2"></div>
+<div class="square front13-3"></div>
+<div class="square front13-4"></div>
+<div class="square front13-5"></div>
+<div class="square front13-6"></div>
+<div class="square front13-7"></div>
+<div class="square front13-8"></div>
+<div class="square front13-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back13-1"></div>
+<div class="square back13-2"></div>
+<div class="square back13-3"></div>
+<div class="square back13-4"></div>
+<div class="square back13-5"></div>
+<div class="square back13-6"></div>
+<div class="square back13-7"></div>
+<div class="square back13-8"></div>
+<div class="square back13-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left13-1"></div>
+<div class="square left13-2"></div>
+<div class="square left13-3"></div>
+<div class="square left13-4"></div>
+<div class="square left13-5"></div>
+<div class="square left13-6"></div>
+<div class="square left13-7"></div>
+<div class="square left13-8"></div>
+<div class="square left13-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right13-1"></div>
+<div class="square right13-2"></div>
+<div class="square right13-3"></div>
+<div class="square right13-4"></div>
+<div class="square right13-5"></div>
+<div class="square right13-6"></div>
+<div class="square right13-7"></div>
+<div class="square right13-8"></div>
+<div class="square right13-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top13-1"></div>
+<div class="square top13-2"></div>
+<div class="square top13-3"></div>
+<div class="square top13-4"></div>
+<div class="square top13-5"></div>
+<div class="square top13-6"></div>
+<div class="square top13-7"></div>
+<div class="square top13-8"></div>
+<div class="square top13-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom13-1"></div>
+<div class="square bottom13-2"></div>
+<div class="square bottom13-3"></div>
+<div class="square bottom13-4"></div>
+<div class="square bottom13-5"></div>
+<div class="square bottom13-6"></div>
+<div class="square bottom13-7"></div>
+<div class="square bottom13-8"></div>
+<div class="square bottom13-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>R = RIGHT FACE</h2>
+
+<!--cube 14-->
+
+<div class="rubik14">
+<div id="container14">
+<div id="cube14">
+
+<figure id="front">
+<div class="face">
+<div class="square front14-1"></div>
+<div class="square front14-2"></div>
+<div class="square front14-3"></div>
+<div class="square front14-4"></div>
+<div class="square front14-5"></div>
+<div class="square front14-6"></div>
+<div class="square front14-7"></div>
+<div class="square front14-8"></div>
+<div class="square front14-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back14-1"></div>
+<div class="square back14-2"></div>
+<div class="square back14-3"></div>
+<div class="square back14-4"></div>
+<div class="square back14-5"></div>
+<div class="square back14-6"></div>
+<div class="square back14-7"></div>
+<div class="square back14-8"></div>
+<div class="square back14-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left14-1"></div>
+<div class="square left14-2"></div>
+<div class="square left14-3"></div>
+<div class="square left14-4"></div>
+<div class="square left14-5"></div>
+<div class="square left14-6"></div>
+<div class="square left14-7"></div>
+<div class="square left14-8"></div>
+<div class="square left14-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right14-1"></div>
+<div class="square right14-2"></div>
+<div class="square right14-3"></div>
+<div class="square right14-4"></div>
+<div class="square right14-5"></div>
+<div class="square right14-6"></div>
+<div class="square right14-7"></div>
+<div class="square right14-8"></div>
+<div class="square right14-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top14-1"></div>
+<div class="square top14-2"></div>
+<div class="square top14-3"></div>
+<div class="square top14-4"></div>
+<div class="square top14-5"></div>
+<div class="square top14-6"></div>
+<div class="square top14-7"></div>
+<div class="square top14-8"></div>
+<div class="square top14-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom14-1"></div>
+<div class="square bottom14-2"></div>
+<div class="square bottom14-3"></div>
+<div class="square bottom14-4"></div>
+<div class="square bottom14-5"></div>
+<div class="square bottom14-6"></div>
+<div class="square bottom14-7"></div>
+<div class="square bottom14-8"></div>
+<div class="square bottom14-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>F = FRONT FACE</h2>
+
+<!--cube 15-->
+
+<div class="rubik15">
+<div id="container15">
+<div id="cube15">
+
+<figure id="front">
+<div class="face">
+<div class="square front15-1"></div>
+<div class="square front15-2"></div>
+<div class="square front15-3"></div>
+<div class="square front15-4"></div>
+<div class="square front15-5"></div>
+<div class="square front15-6"></div>
+<div class="square front15-7"></div>
+<div class="square front15-8"></div>
+<div class="square front15-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back15-1"></div>
+<div class="square back15-2"></div>
+<div class="square back15-3"></div>
+<div class="square back15-4"></div>
+<div class="square back15-5"></div>
+<div class="square back15-6"></div>
+<div class="square back15-7"></div>
+<div class="square back15-8"></div>
+<div class="square back15-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left15-1"></div>
+<div class="square left15-2"></div>
+<div class="square left15-3"></div>
+<div class="square left15-4"></div>
+<div class="square left15-5"></div>
+<div class="square left15-6"></div>
+<div class="square left15-7"></div>
+<div class="square left15-8"></div>
+<div class="square left15-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right15-1"></div>
+<div class="square right15-2"></div>
+<div class="square right15-3"></div>
+<div class="square right15-4"></div>
+<div class="square right15-5"></div>
+<div class="square right15-6"></div>
+<div class="square right15-7"></div>
+<div class="square right15-8"></div>
+<div class="square right15-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top15-1"></div>
+<div class="square top15-2"></div>
+<div class="square top15-3"></div>
+<div class="square top15-4"></div>
+<div class="square top15-5"></div>
+<div class="square top15-6"></div>
+<div class="square top15-7"></div>
+<div class="square top15-8"></div>
+<div class="square top15-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom15-1"></div>
+<div class="square bottom15-2"></div>
+<div class="square bottom15-3"></div>
+<div class="square bottom15-4"></div>
+<div class="square bottom15-5"></div>
+<div class="square bottom15-6"></div>
+<div class="square bottom15-7"></div>
+<div class="square bottom15-8"></div>
+<div class="square bottom15-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>B = BACK FACE</h2>
+
+<!--cube 16-->
+
+<div class="rubik16">
+<div id="container16">
+<div id="cube16">
+
+<figure id="front">
+<div class="face1">
+<div class="square1 front16-1"></div>
+<div class="square1 front16-2"></div>
+<div class="square1 front16-3"></div>
+<div class="square1 front16-4"></div>
+<div class="square1 front16-5"></div>
+<div class="square1 front16-6"></div>
+<div class="square1 front16-7"></div>
+<div class="square1 front16-8"></div>
+<div class="square1 front16-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face1">
+<div class="square1 back16-1"></div>
+<div class="square1 back16-2"></div>
+<div class="square1 back16-3"></div>
+<div class="square1 back16-4"></div>
+<div class="square1 back16-5"></div>
+<div class="square1 back16-6"></div>
+<div class="square1 back16-7"></div>
+<div class="square1 back16-8"></div>
+<div class="square1 back16-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face1">
+<div class="square1 left16-1"></div>
+<div class="square1 left16-2"></div>
+<div class="square1 left16-3"></div>
+<div class="square1 left16-4"></div>
+<div class="square1 left16-5"></div>
+<div class="square1 left16-6"></div>
+<div class="square1 left16-7"></div>
+<div class="square1 left16-8"></div>
+<div class="square1 left16-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face1">
+<div class="square1 right16-1"></div>
+<div class="square1 right16-2"></div>
+<div class="square1 right16-3"></div>
+<div class="square1 right16-4"></div>
+<div class="square1 right16-5"></div>
+<div class="square1 right16-6"></div>
+<div class="square1 right16-7"></div>
+<div class="square1 right16-8"></div>
+<div class="square1 right16-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face1">
+<div class="square1 top16-1"></div>
+<div class="square1 top16-2"></div>
+<div class="square1 top16-3"></div>
+<div class="square1 top16-4"></div>
+<div class="square1 top16-5"></div>
+<div class="square1 top16-6"></div>
+<div class="square1 top16-7"></div>
+<div class="square1 top16-8"></div>
+<div class="square1 top16-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face1">
+<div class="square1 bottom16-1"></div>
+<div class="square1 bottom16-2"></div>
+<div class="square1 bottom16-3"></div>
+<div class="square1 bottom16-4"></div>
+<div class="square1 bottom16-5"></div>
+<div class="square1 bottom16-6"></div>
+<div class="square1 bottom16-7"></div>
+<div class="square1 bottom16-8"></div>
+<div class="square1 bottom16-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+
+<h2>Algorithm Key</h2>
+
+<h2>U</h2>
+
+<!--cube animation 1-->
+
+<div class="Rubik1">
+<div class="Container1">
+<div class="Cube1">
+  
+<div id="cube1-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube1-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube1-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube1-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube1-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube1-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube1-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube1-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube1-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube1-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube1-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube1-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube1-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube1-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube1-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube1-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube1-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube1-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube1-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube1-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube1-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube1-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube1-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube1-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube1-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube1-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube1-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn1">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <U>" onclick="animation1()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>U'</h2>
+
+<!--cube animation 2-->
+
+<div class="Rubik2">
+<div class="Container2">
+<div class="Cube2">
+  
+<div id="cube2-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube2-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube2-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube2-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube2-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube2-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube2-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube2-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube2-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube2-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube2-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube2-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube2-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube2-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube2-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube2-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube2-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube2-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube2-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube2-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube2-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube2-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube2-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube2-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube2-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube2-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube2-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn2">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <U'>" onclick="animation2()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>D</h2>
+
+<!--cube animation 3-->
+
+<div class="Rubik3">
+<div class="Container3">
+<div class="Cube3">
+  
+<div id="cube3-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube3-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube3-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube3-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube3-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube3-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube3-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube3-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube3-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube3-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube3-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube3-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube3-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube3-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube3-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube3-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube3-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube3-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube3-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube3-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube3-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube3-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube3-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube3-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube3-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube3-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube3-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn3">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <D>" onclick="animation3()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>D'</h2>
+
+<!--cube animation 4-->
+
+<div class="Rubik4">
+<div class="Container4">
+<div class="Cube4">
+  
+<div id="cube4-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube4-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube4-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube4-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube4-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube4-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube4-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube4-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube4-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube4-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube4-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube4-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube4-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube4-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube4-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube4-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube4-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube4-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube4-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube4-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube4-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube4-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube4-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube4-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube4-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube4-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube4-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn4">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <D'>" onclick="animation4()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>L</h2>
+
+<!--cube animation 5-->
+
+<div class="Rubik5">
+<div class="Container5">
+<div class="Cube5">
+  
+<div id="cube5-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube5-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube5-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube5-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube5-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube5-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube5-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube5-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube5-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube5-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube5-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube5-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube5-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube5-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube5-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube5-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube5-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube5-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube5-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube5-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube5-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube5-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube5-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube5-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube5-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube5-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube5-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn5">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <L>" onclick="animation5()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<h2>L'</h2>
+
+<!--cube animation 6-->
+
+<div class="Rubik6">
+<div class="Container6">
+<div class="Cube6">
+  
+<div id="cube6-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube6-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube6-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube6-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube6-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube6-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube6-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube6-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube6-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube6-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube6-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube6-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube6-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube6-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube6-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube6-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube6-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube6-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube6-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube6-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube6-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube6-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube6-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube6-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube6-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube6-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube6-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn6">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <L'>" onclick="animation6()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<h2>R</h2>
+
+<!--cube animation 7-->
+
+<div class="Rubik7">
+<div class="Container7">
+<div class="Cube7">
+  
+<div id="cube7-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube7-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube7-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube7-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube7-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube7-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube7-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube7-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube7-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube7-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube7-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube7-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube7-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube7-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube7-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube7-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube7-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube7-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube7-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube7-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube7-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube7-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube7-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube7-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube7-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube7-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube7-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn7">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <R>" onclick="animation7()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>R'</h2>
+
+<!--cube animation 8-->
+
+<div class="Rubik8">
+<div class="Container8">
+<div class="Cube8">
+  
+<div id="cube8-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube8-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube8-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube8-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube8-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube8-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube8-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube8-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube8-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube8-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube8-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube8-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube8-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube8-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube8-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube8-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube8-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube8-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube8-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube8-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube8-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube8-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube8-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube8-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube8-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube8-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube8-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn8"><input type="button" class="button1" value="Click to See the Movement of Algorithm Key <R'>" onclick="animation8()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>F</h2>
+
+<!--cube animation 9-->
+
+<div class="Rubik9">
+<div class="Container9">
+<div class="Cube9">
+  
+<div id="cube9-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube9-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube9-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube9-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube9-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube9-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube9-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube9-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube9-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube9-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube9-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube9-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube9-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube9-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube9-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube9-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube9-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube9-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube9-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube9-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube9-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube9-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube9-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube9-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube9-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube9-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube9-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn9">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <F>" onclick="animation9()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>F'</h2>
+
+<!--cube animation 10-->
+
+<div class="Rubik10">
+<div class="Container10">
+<div class="Cube10">
+  
+<div id="cube10-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube10-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube10-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube10-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube10-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube10-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube10-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube10-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube10-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube10-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube10-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube10-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube10-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube10-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube10-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube10-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube10-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube10-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube10-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube10-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube10-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube10-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube10-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube10-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube10-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube10-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube10-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn10">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <F'>" onclick="animation10()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>B</h2>
+
+<!--cube animation 11-->
+
+<div class="Rubik11">
+<div class="Container11">
+<div class="Cube11">
+  
+<div id="cube11-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube11-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube11-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube11-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube11-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube11-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube11-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube11-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube11-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube11-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube11-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube11-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube11-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube11-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube11-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube11-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube11-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube11-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube11-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube11-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube11-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube11-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube11-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube11-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube11-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube11-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube11-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn11">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <B>" onclick="animation11()">
+</div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h2>B'</h2>
+
+<!--cube animation 12-->
+
+<div class="Rubik12">
+<div class="Container12">
+<div class="Cube12">
+  
+<div id="cube12-1">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube12-2">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube12-3">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+
+<div id="cube12-4">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>  
+  
+<div id="cube12-5">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube12-6">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube12-7">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube12-8">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube12-9">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube12-10">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube12-11">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube12-12">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube12-13">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube12-14">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube12-15">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube12-16">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+
+<div id="cube12-17">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div> 
+  
+<div id="cube12-18">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube12-19">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube12-20">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube12-21">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube12-22">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube12-23">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube12-24">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+<div id="cube12-25">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube12-26">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+  
+<div id="cube12-27">
+<div class="Face">
+  
+<div class="Square front1"></div>
+<div class="Square back1"></div>
+<div class="Square left1"></div>
+<div class="Square right1"></div>
+<div class="Square top1"></div>
+<div class="Square bottom1"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="btn12">
+<input type="button" class="button1" value="Click to See the Movement of Algorithm Key <B'>" onclick="animation12()">
+</div>
+
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<h3><i class="fas fa-star-of-life" style="font-size:16px; color: #ffb433;"></i>  Each of the move above is a ¼ TURN.</h3></li>
+<br>
+<h3><i class="fas fa-star-of-life" style="font-size:16px; color: #ffb433;"></i>  An ALGORITHM is a sequence of moves that you need to follow in a specific order.</h3>
+<br>
+<h3><i class="fas fa-star-of-life" style="font-size:16px; color: #ffb433;"></i>  When following the algorithms in this guide,</h3>
+<h3>it is important  to maintain the FRONT face of your Rubik’s Cube through all of the turns.</h3>
+<br>
+<h3><i class="fas fa-star-of-life" style="font-size:16px; color: #ffb433;"></i>  If there is a 2 next to the algorithm letter, follow the algorithm 2 times.</h3>
+<br>
+<h3><i class="fas fa-star-of-life" style="font-size:16px; color: #ffb433;"></i>  A turn is clockwise when looking at that face directly.</h3>
+<br>
+<h3><i class="fas fa-star-of-life" style="font-size:16px; color: #ffb433;"></i>  If there is an apostrophe (') after the algorithm letter, it means to make an anticlockwise turn of the face.</h3>
+
+<br><br>
+
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/CkA96Muy19I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+<div class="button"><a href="Create Daisy.html" class="click">Next ></a></div>
+
+</div>
+</body>
+
+</html>

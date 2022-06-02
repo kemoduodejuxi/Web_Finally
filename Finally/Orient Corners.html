@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+
+<title>Orient Corners</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="Rubik's cube.css">
+<link rel="icon" href="cube.png">
+<script src="https://kit.fontawesome.com/7f10cd110f.js" crossorigin="anonymous"></script>
+<script src='control.js'></script>
+
+<style>
+
+h1 {
+margin-left:20%;
+text-align:center;
+}
+
+
+h2 {
+margin-left:20%;
+padding:20px;
+text-align:center;
+}
+
+h3 {
+margin-left:20%;
+padding:5px;
+text-align:center;
+}
+
+.button1{
+position: absolute;
+left:350px;
+}
+
+.button2{
+position: absolute;
+right:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img class="logo" src="logo.png">
+<nav>
+<ul>
+<li><a href="Home.html">HOME</a></li>
+<li><a href="Cube history.html">ABOUT</a>
+<ul>
+<li><a href="Cube history.html">The History of Cube</a></li>
+<li><a href="Cube structure.html">Information about Cube</a></li>
+<li><a href="Types of Cube.html">Types of Cube</a></li>
+</ul>
+<li><a href="Get To Know.html">SOLUTION GUIDE</a>
+<ul>
+</li>
+<li><a href="Get To Know.html">Get To Know</a></li>
+<li><a href="Create Daisy.html">Create Daisy</a></li>
+<li><a href="Make a White Cross.html">Make a WHITE Cross</a></li>
+<li><a href="Solve White Corners.html">Solve WHITE Corners</a></li>
+<li><a href="Place Edges in Middle.html">Place Edges in Middle</a></li>
+<li><a href="Make Yellow Cross.html">Make YELLOW Cross</a></li>
+<li><a href="Orient Corners.html">Orient Corners</a></li>
+<li><a href="Place Yellow Corners.html">Place YELLOW Corners</a></li>
+<li><a href="Position Yellow Edges.html">Position YELLOW Edges</a></li>
+</ul>
+</li>
+<li><a href="index.html">SPEEDCUBING</a></li>
+<li><a href="Quick Solving.html">QUICK SOLVING</a></li>
+<li><input class="user" id="name" type="button" value="SIGN IN" onclick="user()" style="font-size : 16px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"></li>
+</ul>
+</nav>
+
+
+<div class="submenu">
+<a href="Get To Know.html">Get To Know Your Rubik's Cube</a>
+<a href="Create Daisy.html">Step 1 - Create Daisy</a>
+<a href="Make a White Cross.html">Step 2 - Make a WHITE Cross</a>
+<a href="Solve White Corners.html">Step 3 - Solve WHITE Corners</a>
+<a href="Place Edges in Middle.html">Step 4 - Place Edges in MIDDLE</a>
+<a href="Make Yellow Cross.html">Step 5 - Make YELLOW Cross</a>
+<a href="Orient Corners.html">Step 6 - Orient Corners</a>
+<a href="Place Yellow Corners.html">Step 7 - Place YELLOW Corners</a>
+<a href="Position Yellow Edges.html">Step 8 - Position YELLOW Edges</a>
+</div>
+
+<br><br><br><br>
+
+<div>
+<h1>STEP 6: Orient the Corners</h1>
+
+<h2>Holding Your Rubik’s Cube</h2>
+<h3>Hold your Rubik’s Cube so the UP face matches one of the cubes below.</h3>
+
+<!--cube 48-->
+
+<div class="rubik48">
+<div id="container48">
+<div id="cube48">
+
+<figure id="front">
+<div class="face">
+<div class="square front48-1"></div>
+<div class="square front48-2"></div>
+<div class="square front48-3"></div>
+<div class="square front48-4"></div>
+<div class="square front48-5"></div>
+<div class="square front48-6"></div>
+<div class="square front48-7"></div>
+<div class="square front48-8"></div>
+<div class="square front48-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back48-1"></div>
+<div class="square back48-2"></div>
+<div class="square back48-3"></div>
+<div class="square back48-4"></div>
+<div class="square back48-5"></div>
+<div class="square back48-6"></div>
+<div class="square back48-7"></div>
+<div class="square back48-8"></div>
+<div class="square back48-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left48-1"></div>
+<div class="square left48-2"></div>
+<div class="square left48-3"></div>
+<div class="square left48-4"></div>
+<div class="square left48-5"></div>
+<div class="square left48-6"></div>
+<div class="square left48-7"></div>
+<div class="square left48-8"></div>
+<div class="square left48-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right48-1"></div>
+<div class="square right48-2"></div>
+<div class="square right48-3"></div>
+<div class="square right48-4"></div>
+<div class="square right48-5"></div>
+<div class="square right48-6"></div>
+<div class="square right48-7"></div>
+<div class="square right48-8"></div>
+<div class="square right48-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top48-1"></div>
+<div class="square top48-2"></div>
+<div class="square top48-3"></div>
+<div class="square top48-4"></div>
+<div class="square top48-5"></div>
+<div class="square top48-6"></div>
+<div class="square top48-7"></div>
+<div class="square top48-8"></div>
+<div class="square top48-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom48-1"></div>
+<div class="square bottom48-2"></div>
+<div class="square bottom48-3"></div>
+<div class="square bottom48-4"></div>
+<div class="square bottom48-5"></div>
+<div class="square bottom48-6"></div>
+<div class="square bottom48-7"></div>
+<div class="square bottom48-8"></div>
+<div class="square bottom48-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<h2>OR</h2>
+
+<!--cube 49-->
+
+<div class="rubik49">
+<div id="container49">
+<div id="cube49">
+
+<figure id="front">
+<div class="face">
+<div class="square front49-1"></div>
+<div class="square front49-2"></div>
+<div class="square front49-3"></div>
+<div class="square front49-4"></div>
+<div class="square front49-5"></div>
+<div class="square front49-6"></div>
+<div class="square front49-7"></div>
+<div class="square front49-8"></div>
+<div class="square front49-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back49-1"></div>
+<div class="square back49-2"></div>
+<div class="square back49-3"></div>
+<div class="square back49-4"></div>
+<div class="square back49-5"></div>
+<div class="square back49-6"></div>
+<div class="square back49-7"></div>
+<div class="square back49-8"></div>
+<div class="square back49-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left49-1"></div>
+<div class="square left49-2"></div>
+<div class="square left49-3"></div>
+<div class="square left49-4"></div>
+<div class="square left49-5"></div>
+<div class="square left49-6"></div>
+<div class="square left49-7"></div>
+<div class="square left49-8"></div>
+<div class="square left49-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right49-1"></div>
+<div class="square right49-2"></div>
+<div class="square right49-3"></div>
+<div class="square right49-4"></div>
+<div class="square right49-5"></div>
+<div class="square right49-6"></div>
+<div class="square right49-7"></div>
+<div class="square right49-8"></div>
+<div class="square right49-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top49-1"></div>
+<div class="square top49-2"></div>
+<div class="square top49-3"></div>
+<div class="square top49-4"></div>
+<div class="square top49-5"></div>
+<div class="square top49-6"></div>
+<div class="square top49-7"></div>
+<div class="square top49-8"></div>
+<div class="square top49-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom49-1"></div>
+<div class="square bottom49-2"></div>
+<div class="square bottom49-3"></div>
+<div class="square bottom49-4"></div>
+<div class="square bottom49-5"></div>
+<div class="square bottom49-6"></div>
+<div class="square bottom49-7"></div>
+<div class="square bottom49-8"></div>
+<div class="square bottom49-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<h2>OR</h2>
+
+<!--cube 50-->
+
+<div class="rubik50">
+<div id="container50">
+<div id="cube50">
+
+<figure id="front">
+<div class="face">
+<div class="square front50-1"></div>
+<div class="square front50-2"></div>
+<div class="square front50-3"></div>
+<div class="square front50-4"></div>
+<div class="square front50-5"></div>
+<div class="square front50-6"></div>
+<div class="square front50-7"></div>
+<div class="square front50-8"></div>
+<div class="square front50-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back50-1"></div>
+<div class="square back50-2"></div>
+<div class="square back50-3"></div>
+<div class="square back50-4"></div>
+<div class="square back50-5"></div>
+<div class="square back50-6"></div>
+<div class="square back50-7"></div>
+<div class="square back50-8"></div>
+<div class="square back50-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left50-1"></div>
+<div class="square left50-2"></div>
+<div class="square left50-3"></div>
+<div class="square left50-4"></div>
+<div class="square left50-5"></div>
+<div class="square left50-6"></div>
+<div class="square left50-7"></div>
+<div class="square left50-8"></div>
+<div class="square left50-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right50-1"></div>
+<div class="square right50-2"></div>
+<div class="square right50-3"></div>
+<div class="square right50-4"></div>
+<div class="square right50-5"></div>
+<div class="square right50-6"></div>
+<div class="square right50-7"></div>
+<div class="square right50-8"></div>
+<div class="square right50-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top50-1"></div>
+<div class="square top50-2"></div>
+<div class="square top50-3"></div>
+<div class="square top50-4"></div>
+<div class="square top50-5"></div>
+<div class="square top50-6"></div>
+<div class="square top50-7"></div>
+<div class="square top50-8"></div>
+<div class="square top50-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom50-1"></div>
+<div class="square bottom50-2"></div>
+<div class="square bottom50-3"></div>
+<div class="square bottom50-4"></div>
+<div class="square bottom50-5"></div>
+<div class="square bottom50-6"></div>
+<div class="square bottom50-7"></div>
+<div class="square bottom50-8"></div>
+<div class="square bottom50-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<h2>OR</h2>
+
+<!--cube 51-->
+
+<div class="rubik51">
+<div id="container51">
+<div id="cube51">
+
+<figure id="front">
+<div class="face">
+<div class="square front51-1"></div>
+<div class="square front51-2"></div>
+<div class="square front51-3"></div>
+<div class="square front51-4"></div>
+<div class="square front51-5"></div>
+<div class="square front51-6"></div>
+<div class="square front51-7"></div>
+<div class="square front51-8"></div>
+<div class="square front51-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back51-1"></div>
+<div class="square back51-2"></div>
+<div class="square back51-3"></div>
+<div class="square back51-4"></div>
+<div class="square back51-5"></div>
+<div class="square back51-6"></div>
+<div class="square back51-7"></div>
+<div class="square back51-8"></div>
+<div class="square back51-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left51-1"></div>
+<div class="square left51-2"></div>
+<div class="square left51-3"></div>
+<div class="square left51-4"></div>
+<div class="square left51-5"></div>
+<div class="square left51-6"></div>
+<div class="square left51-7"></div>
+<div class="square left51-8"></div>
+<div class="square left51-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right51-1"></div>
+<div class="square right51-2"></div>
+<div class="square right51-3"></div>
+<div class="square right51-4"></div>
+<div class="square right51-5"></div>
+<div class="square right51-6"></div>
+<div class="square right51-7"></div>
+<div class="square right51-8"></div>
+<div class="square right51-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top51-1"></div>
+<div class="square top51-2"></div>
+<div class="square top51-3"></div>
+<div class="square top51-4"></div>
+<div class="square top51-5"></div>
+<div class="square top51-6"></div>
+<div class="square top51-7"></div>
+<div class="square top51-8"></div>
+<div class="square top51-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom51-1"></div>
+<div class="square bottom51-2"></div>
+<div class="square bottom51-3"></div>
+<div class="square bottom51-4"></div>
+<div class="square bottom51-5"></div>
+<div class="square bottom51-6"></div>
+<div class="square bottom51-7"></div>
+<div class="square bottom51-8"></div>
+<div class="square bottom51-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<h2>OR</h2>
+
+<!--cube 52-->
+
+<div class="rubik52">
+<div id="container52">
+<div id="cube52">
+
+<figure id="front">
+<div class="face">
+<div class="square front52-1"></div>
+<div class="square front52-2"></div>
+<div class="square front52-3"></div>
+<div class="square front52-4"></div>
+<div class="square front52-5"></div>
+<div class="square front52-6"></div>
+<div class="square front52-7"></div>
+<div class="square front52-8"></div>
+<div class="square front52-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back52-1"></div>
+<div class="square back52-2"></div>
+<div class="square back52-3"></div>
+<div class="square back52-4"></div>
+<div class="square back52-5"></div>
+<div class="square back52-6"></div>
+<div class="square back52-7"></div>
+<div class="square back52-8"></div>
+<div class="square back52-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left52-1"></div>
+<div class="square left52-2"></div>
+<div class="square left52-3"></div>
+<div class="square left52-4"></div>
+<div class="square left52-5"></div>
+<div class="square left52-6"></div>
+<div class="square left52-7"></div>
+<div class="square left52-8"></div>
+<div class="square left52-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right52-1"></div>
+<div class="square right52-2"></div>
+<div class="square right52-3"></div>
+<div class="square right52-4"></div>
+<div class="square right52-5"></div>
+<div class="square right52-6"></div>
+<div class="square right52-7"></div>
+<div class="square right52-8"></div>
+<div class="square right52-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top52-1"></div>
+<div class="square top52-2"></div>
+<div class="square top52-3"></div>
+<div class="square top52-4"></div>
+<div class="square top52-5"></div>
+<div class="square top52-6"></div>
+<div class="square top52-7"></div>
+<div class="square top52-8"></div>
+<div class="square top52-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom52-1"></div>
+<div class="square bottom52-2"></div>
+<div class="square bottom52-3"></div>
+<div class="square bottom52-4"></div>
+<div class="square bottom52-5"></div>
+<div class="square bottom52-6"></div>
+<div class="square bottom52-7"></div>
+<div class="square bottom52-8"></div>
+<div class="square bottom52-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<h2>Action 1</h2>
+<h3>Follow this algorithm:</h3>
+<h2>R <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> R' <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> R <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> U2 <i class="fas fa-angle-double-right" style="font-size:20px; color:brown;"></i> R'</h2>
+
+<h2>Action 2</h2>
+<h3>Rematch your Rubik’s Cube to one of cubes in the ‘Holding your Rubik’s Cube’ section</h3> 
+<h3>and follow the algorithm until you have all yellow tiles on the UP face.</h3>
+
+<h2>Step finished!</h2>
+<h3>Hover your mouse over the cube below to see another side of the cube.</h3>
+<h3>When your Rubik’s Cube has all the YELLOW on the UP face, like below, move to Step 7!</h3>
+
+<!--cube 53-->
+
+<div class="rubik53">
+<div id="container53">
+<div id="cube53">
+
+<figure id="front">
+<div class="face">
+<div class="square front53-1"></div>
+<div class="square front53-2"></div>
+<div class="square front53-3"></div>
+<div class="square front53-4"></div>
+<div class="square front53-5"></div>
+<div class="square front53-6"></div>
+<div class="square front53-7"></div>
+<div class="square front53-8"></div>
+<div class="square front53-9"></div>
+</div>
+</figure>
+
+<figure id="back">
+<div class="face">
+<div class="square back53-1"></div>
+<div class="square back53-2"></div>
+<div class="square back53-3"></div>
+<div class="square back53-4"></div>
+<div class="square back53-5"></div>
+<div class="square back53-6"></div>
+<div class="square back53-7"></div>
+<div class="square back53-8"></div>
+<div class="square back53-9"></div>
+</div>
+</figure>
+  
+<figure id="left">
+<div class="face">
+<div class="square left53-1"></div>
+<div class="square left53-2"></div>
+<div class="square left53-3"></div>
+<div class="square left53-4"></div>
+<div class="square left53-5"></div>
+<div class="square left53-6"></div>
+<div class="square left53-7"></div>
+<div class="square left53-8"></div>
+<div class="square left53-9"></div>
+</div>
+</figure>
+
+<figure id="right">
+<div class="face">
+<div class="square right53-1"></div>
+<div class="square right53-2"></div>
+<div class="square right53-3"></div>
+<div class="square right53-4"></div>
+<div class="square right53-5"></div>
+<div class="square right53-6"></div>
+<div class="square right53-7"></div>
+<div class="square right53-8"></div>
+<div class="square right53-9"></div>
+</div>
+</figure>
+
+<figure id="top">
+<div class="face">
+<div class="square top53-1"></div>
+<div class="square top53-2"></div>
+<div class="square top53-3"></div>
+<div class="square top53-4"></div>
+<div class="square top53-5"></div>
+<div class="square top53-6"></div>
+<div class="square top53-7"></div>
+<div class="square top53-8"></div>
+<div class="square top53-9"></div>
+</div>
+</figure>
+
+<figure id="bottom">
+<div class="face">
+<div class="square bottom53-1"></div>
+<div class="square bottom53-2"></div>
+<div class="square bottom53-3"></div>
+<div class="square bottom53-4"></div>
+<div class="square bottom53-5"></div>
+<div class="square bottom53-6"></div>
+<div class="square bottom53-7"></div>
+<div class="square bottom53-8"></div>
+<div class="square bottom53-9"></div>
+</div>
+</figure>
+
+</div>
+</div>
+</div>
+
+
+<br><br><br><br>
+
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/xby6INEmrwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+<div class="button1"><a href="Make Yellow Cross.html" class="click">< Previous</a></div>
+<div class="button2"><a href="Place Yellow Corners.html" class="click">Next ></a></div>
+</div>
+</body>
+
+</html>
